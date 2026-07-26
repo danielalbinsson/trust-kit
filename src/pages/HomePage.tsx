@@ -38,7 +38,7 @@ export function HomePage() {
         </p>
         <div className="fade-up-delay-2 mt-10 flex flex-wrap items-center gap-x-5 gap-y-3">
           <Link className="btn btn-primary" to="/docs/cli">
-            <code className="text-sm text-inherit">npx @aletheia/cli</code>
+            <code className="text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
             <ArrowRight size={18} weight="bold" />
           </Link>
           <a className="btn btn-secondary" href={LINKS.aletheia}>
@@ -86,7 +86,7 @@ export function HomePage() {
               </p>
               <pre className="cli-snippet" tabIndex={0}>
                 <code>
-                  {`$ npx @aletheia/cli diff --baseline git:main\n`}
+                  {`$ npx @danielalbinsson/aletheia-cli diff --baseline git:main\n`}
                   <span className="fail">exit 1</span>
                   {`  authority expanded\n`}
                   {`+ connection  stripe\n`}

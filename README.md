@@ -2,7 +2,7 @@
 
 Public product shell for [agentic-kit.dev](https://agentic-kit.dev) — inspect, stamp, and ship Eve agents you can defend.
 
-**Engine:** [Aletheia](https://github.com/danielalbinsson/Aletheia) (OSS inspector + `@aletheia/cli`)  
+**Engine:** [Aletheia](https://github.com/danielalbinsson/Aletheia) (OSS inspector + `@danielalbinsson/aletheia-cli`)  
 **Plan:** see [PRODUCT-PLAN.md](./PRODUCT-PLAN.md) and [BUILD-PLAN.md](./BUILD-PLAN.md)
 
 ## Develop

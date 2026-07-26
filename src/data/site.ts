@@ -29,7 +29,7 @@ export const site = {
     "npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust",
   aletheiaSkillUrl:
     "https://github.com/danielalbinsson/Aletheia/tree/main/skills/aletheia-eve-trust",
-  cliNpm: "https://www.npmjs.com/package/@aletheia/cli",
+  cliNpm: "https://www.npmjs.com/package/@danielalbinsson/aletheia-cli",
   agenticUxUrl: "https://agentic-ux.com",
   hireUrl: "https://agentic-ux.com/hire",
   crawlPolicy: {

@@ -42,7 +42,7 @@ git commit -m "chore: capability baseline"
 git checkout -b demo/add-connection
 # Add a new connection under agent/connections/ (e.g. stripe.ts)
 git add agent/connections && git commit -m "feat: add Stripe connection"
-npx @aletheia/cli diff --baseline git:main
+npx @danielalbinsson/aletheia-cli diff --baseline git:main
 # → exit 1, authority expanded
 ```
 
@@ -57,4 +57,4 @@ See [CI gate](/docs/ci) for the workflow file.
 - Index: https://agentic-kit.dev/llms.txt
 - Full corpus: https://agentic-kit.dev/llms-full.txt
 - Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
-- CLI: https://www.npmjs.com/package/@aletheia/cli
+- CLI: https://www.npmjs.com/package/@danielalbinsson/aletheia-cli

@@ -25,4 +25,4 @@ Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprint
 - Index: https://agentic-kit.dev/llms.txt
 - Full corpus: https://agentic-kit.dev/llms-full.txt
 - Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
-- CLI: https://www.npmjs.com/package/@aletheia/cli
+- CLI: https://www.npmjs.com/package/@danielalbinsson/aletheia-cli

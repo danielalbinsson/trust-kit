@@ -49,7 +49,7 @@ export function registerKitPrompts(server: McpServer): void {
                 `1. Install the skill if needed: \`${site.aletheiaSkillInstall}\``,
                 "2. Read Agentic Kit docs via MCP resources or https://agentic-kit.dev/llms.txt",
                 `3. Read engine index: ${site.aletheiaLlms}`,
-                "4. Run portrait / `npx @aletheia/cli diff --baseline git:main` as appropriate",
+                "4. Run portrait / `npx @danielalbinsson/aletheia-cli diff --baseline git:main` as appropriate",
                 "5. Report verified facts, source-labelled claims, and drift separately",
                 "",
                 "If Kit Certified is in scope, use the checklist at agentic-kit://docs/kit-certified.",

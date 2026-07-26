@@ -3,7 +3,7 @@ export { DOCS_NAV } from "../data/docs";
 export const LINKS = {
   aletheia: "https://github.com/danielalbinsson/Aletheia",
   aletheiaClone: "https://github.com/danielalbinsson/Aletheia.git",
-  cli: "https://www.npmjs.com/package/@aletheia/cli",
+  cli: "https://www.npmjs.com/package/@danielalbinsson/aletheia-cli",
   designQa: "https://github.com/danielalbinsson/design-qa-agent",
   designQaBundled: "https://github.com/danielalbinsson/Aletheia/tree/main/agent",
   eveBlueprints: "https://github.com/danielalbinsson/eve-blueprints",

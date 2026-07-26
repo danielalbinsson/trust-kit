@@ -25,7 +25,7 @@ For MCP resources and tools: https://agentic-kit.dev/api/mcp
 ## Promise
 
 - Inspect: verified self-portrait + honesty contract (Aletheia)
-- Gate: authority diff in CI / on deploy (`@aletheia/cli`)
+- Gate: authority diff in CI / on deploy (`@danielalbinsson/aletheia-cli`)
 - Stamp: Kit Certified starters that pass inspection + Agentic UX lifecycle
 
 ## Docs
@@ -49,7 +49,7 @@ For MCP resources and tools: https://agentic-kit.dev/api/mcp
 - [Aletheia llms.txt](https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt): engine agent index
 - [AGENTS.md](https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/AGENTS.md): install, config, usage for coding agents
 - [Aletheia skill](https://github.com/danielalbinsson/Aletheia/tree/main/skills/aletheia-eve-trust): `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
-- [CLI (@aletheia/cli)](https://www.npmjs.com/package/@aletheia/cli): `npx @aletheia/cli diff --baseline git:main`
+- [CLI (@danielalbinsson/aletheia-cli)](https://www.npmjs.com/package/@danielalbinsson/aletheia-cli): `npx @danielalbinsson/aletheia-cli diff --baseline git:main`
 - [Aletheia repository](https://github.com/danielalbinsson/Aletheia)
 
 ## Site (human UI)

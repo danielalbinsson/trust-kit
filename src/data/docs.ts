@@ -56,7 +56,7 @@ Drift between source \`approval:\` gates and the consent sidecar is reported as 
 
 \`\`\`bash
 # Preferred for consumers
-npx @aletheia/cli diff --baseline git:main
+npx @danielalbinsson/aletheia-cli diff --baseline git:main
 
 # From the Aletheia repo
 pnpm build:cli
@@ -127,7 +127,7 @@ git commit -m "chore: capability baseline"
 git checkout -b demo/add-connection
 # Add a new connection under agent/connections/ (e.g. stripe.ts)
 git add agent/connections && git commit -m "feat: add Stripe connection"
-npx @aletheia/cli diff --baseline git:main
+npx @danielalbinsson/aletheia-cli diff --baseline git:main
 # → exit 1, authority expanded
 \`\`\`
 
@@ -185,11 +185,11 @@ Reference implementation: [Aletheia capability-review.yml](https://github.com/da
 4. \`aletheia diff\` green in CI against a committed baseline
 5. Before / While / After lifecycle documented (Agentic UX)
 6. Intentional restrictions (disabled framework tools) visible as "cannots"
-7. One-page passport markdown generated from the portrait for stakeholders
+7. One-page passport markdown for stakeholders (hand-authored to match the portrait today; \`aletheia passport\` generation is Phase 2)
 
 Selling blueprints without the stamp is just another template repo. This checklist is the public definition of **Kit Certified**.
 
-Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprints/tree/main/support-bot) · [design-qa (bundled)](https://github.com/danielalbinsson/Aletheia/tree/main/agent)`,
+Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprints/tree/main/support-bot) · [Beacon](https://github.com/danielalbinsson/Aletheia/tree/main/examples/beacon) · [design-qa (bundled)](https://github.com/danielalbinsson/Aletheia/tree/main/agent)`,
   },
   {
     id: "disclaimer",

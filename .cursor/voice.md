@@ -7,7 +7,7 @@ Public product shell for Eve builders. Register: **technical / peer practitioner
 | Term | Use |
 |------|-----|
 | **Agentic Kit** | Public product / site brand |
-| **Aletheia** | Inspector engine + `@aletheia/cli` |
+| **Aletheia** | Inspector engine + `@danielalbinsson/aletheia-cli` |
 | **Kit Certified** | Stamp checklist / badge (not “Kit-stamped” as a noun) |
 | **Capability Review** | Named paid offer (title case) |
 | **Eve** | Framework name; CLI stays `eve build` |

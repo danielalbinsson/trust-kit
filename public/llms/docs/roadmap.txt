@@ -44,4 +44,4 @@ Want early access? Mention it when you [book a Capability Review](/review).
 - Index: https://agentic-kit.dev/llms.txt
 - Full corpus: https://agentic-kit.dev/llms-full.txt
 - Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
-- CLI: https://www.npmjs.com/package/@aletheia/cli
+- CLI: https://www.npmjs.com/package/@danielalbinsson/aletheia-cli
