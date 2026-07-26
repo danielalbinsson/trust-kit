@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @font-face {
+        font-family: Archivo;
+        src: url("file:///tmp/og-fonts/Archivo.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "IBM Plex Mono";
+        src: url("file:///tmp/og-fonts/IBMPlexMono-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "IBM Plex Mono";
+        src: url("file:///tmp/og-fonts/IBMPlexMono-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+        color: #101010;
+        background: #f7f5f1;
+      }
+
+      .shell {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+
+      .shell::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 80% 50% at 10% -10%, rgba(13, 107, 132, 0.14), transparent 55%),
+          radial-gradient(ellipse 60% 40% at 90% 0%, rgba(200, 224, 74, 0.12), transparent 50%),
+          linear-gradient(180deg, #faf8f4 0%, #f7f5f1 40%, #f3efe8 100%);
+      }
+
+      .shell::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.35;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+        mix-blend-mode: multiply;
+      }
+
+      .nav {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 64px;
+        border-bottom: 1px solid rgba(16, 16, 16, 0.05);
+      }
+
+      .brand {
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 8px;
+        font-size: 15px;
+        color: #2a2a2a;
+      }
+
+      .nav-links span {
+        padding: 6px 12px;
+        border-radius: 9999px;
+      }
+
+      .nav-links .active {
+        background: #101010;
+        color: #fff;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        padding: 72px 64px 0;
+        max-width: 1080px;
+      }
+
+      .eyebrow {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #5c5c5c;
+      }
+
+      .display {
+        margin-top: 20px;
+        font-weight: 100;
+        font-size: 72px;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+        max-width: 980px;
+        text-wrap: balance;
+      }
+
+      .lead {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.55;
+        color: #2a2a2a;
+        max-width: 620px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="nav">
+        <div class="brand">Agentic Kit</div>
+        <div class="nav-links">
+          <span>Gallery</span>
+          <span>Docs</span>
+          <span>Review</span>
+        </div>
+      </header>
+      <main class="hero">
+        <p class="eyebrow">Agentic Kit</p>
+        <h1 class="display">See what an Eve agent can do before you run it.</h1>
+        <p class="lead">
+          Inspect, stamp, and ship agents you can defend. Local-first trust for
+          filesystem-first Eve builders.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

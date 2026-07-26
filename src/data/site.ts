@@ -44,11 +44,11 @@ export const site = {
       "Bingbot",
     ] as const,
   },
-  ogImagePath: "/favicon.svg",
-  ogImageWidth: 512,
-  ogImageHeight: 512,
-  ogImageAlt: "Agentic Kit · Eve agent trust",
-  twitterCard: "summary" as const,
+  ogImagePath: "/og-image.png",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: "Agentic Kit — See what an Eve agent can do before you run it.",
+  twitterCard: "summary_large_image" as const,
   galleryMetaDescription:
     "Stamped Eve agent blueprints that pass Aletheia inspection and the Kit Certified checklist.",
   reviewMetaDescription:
