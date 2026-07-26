@@ -1,0 +1,50 @@
+# CLI quickstart
+
+> Headless capability review for Eve agents. Exit 1 means authority expanded.
+
+Product: Agentic Kit (https://agentic-kit.dev/)
+HTML: https://agentic-kit.dev/docs/cli
+Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+
+Headless capability review for Eve agents. Exit `1` means authority expanded.
+
+## Install & run
+
+```bash
+# Preferred for consumers
+npx @aletheia/cli diff --baseline git:main
+
+# From the Aletheia repo
+pnpm build:cli
+node bin/aletheia.mjs diff --baseline git:main
+```
+
+## Inspector UI
+
+```bash
+git clone https://github.com/danielalbinsson/Aletheia.git
+cd Aletheia
+pnpm install
+pnpm dev   # → http://localhost:5173
+```
+
+Browse to a folder containing `agent/agent.ts`. Prefer verified-from-build after `eve build`.
+
+## Agent skill
+
+```bash
+npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust
+```
+
+## Exit codes
+
+- `0` — ok
+- `1` — authority expanded
+- `2` — error
+
+## Related
+
+- Index: https://agentic-kit.dev/llms.txt
+- Full corpus: https://agentic-kit.dev/llms-full.txt
+- Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- CLI: https://www.npmjs.com/package/@aletheia/cli

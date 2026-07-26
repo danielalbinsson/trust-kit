@@ -1,0 +1,10 @@
+{
+  "name": "support-bot",
+  "description": "Blast-radius pack for customer-support Eve agents (Phase 2 content).",
+  "failOn": "elevated",
+  "rules": [
+    { "category": "payments", "severity": "high", "pattern": "stripe|payment|refund|billing" },
+    { "category": "customer records", "severity": "high", "pattern": "zendesk|intercom|hubspot|customer|order" },
+    { "category": "communications", "severity": "medium", "pattern": "slack|email|sms|twilio" }
+  ]
+}

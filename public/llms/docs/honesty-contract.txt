@@ -1,0 +1,37 @@
+# Honesty contract
+
+> Never present a guess as a fact. Verified-from-build vs from-source; what Aletheia refuses to invent.
+
+Product: Agentic Kit (https://agentic-kit.dev/)
+HTML: https://agentic-kit.dev/docs/honesty-contract
+Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+
+A trust tool that lies is worse than none. Aletheia's core rule: **never present a guess as a fact.** Every claim carries provenance.
+
+## Verified from build
+
+After `eve build`, the portrait reads the compiled manifest (`.eve/compile/compiled-agent-manifest.json`):
+
+- Tool names, descriptions, and input schemas
+- Connections and channels
+- Schedules (acts-on-its-own)
+- Framework tools the agent has disabled (verifiable "cannots")
+- Subagents, recursed from nested manifests
+
+## From source
+
+Without a manifest (common on a fresh clone), Aletheia falls back to a tolerant read of `agent/` and labels it **from source — build to verify**.
+
+## What Aletheia refuses to invent
+
+- Per-tool **approval** as build-verified (use `agent/.aletheia/consent.json`; always source-declared)
+- Connection read/write scope when Eve does not expose it
+
+Drift between source `approval:` gates and the consent sidecar is reported as **drift**, not shown as fact.
+
+## Related
+
+- Index: https://agentic-kit.dev/llms.txt
+- Full corpus: https://agentic-kit.dev/llms-full.txt
+- Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- CLI: https://www.npmjs.com/package/@aletheia/cli

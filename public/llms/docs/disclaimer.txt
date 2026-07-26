@@ -1,0 +1,22 @@
+# Disclaimer
+
+> Legibility tooling, not a security audit or compliance certification.
+
+Product: Agentic Kit (https://agentic-kit.dev/)
+HTML: https://agentic-kit.dev/docs/disclaimer
+Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+
+Agentic Kit and Aletheia help you **see** what an Eve agent is configured to do. They are not a security audit, penetration test, compliance certification, or guarantee that an agent is safe to run.
+
+- Secrets can still leak through misconfigured credentials or prompts
+- Runtime behavior can diverge from the static portrait
+- Model choices and instructions can expand effective authority without a tool change
+
+Use the honesty contract: never treat inferred facts as verified. Prefer `eve build` + required CI checks before merge or deploy.
+
+## Related
+
+- Index: https://agentic-kit.dev/llms.txt
+- Full corpus: https://agentic-kit.dev/llms-full.txt
+- Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- CLI: https://www.npmjs.com/package/@aletheia/cli

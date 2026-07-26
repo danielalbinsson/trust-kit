@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+# llms.txt index: https://agentic-kit.dev/llms.txt
+# llms-full.txt: https://agentic-kit.dev/llms-full.txt

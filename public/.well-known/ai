@@ -1,0 +1,59 @@
+{
+  "aiendpoint": {
+    "service": {
+      "name": "Agentic Kit",
+      "description": "See what an Eve agent can do before you run it. Inspect, stamp, and ship agents you can defend.",
+      "provider": "Daniel Albinsson"
+    },
+    "capabilities": [
+      {
+        "id": "docs-index",
+        "name": "Agentic Kit Docs Index",
+        "description": "Machine-readable docs for Eve agent trust: honesty contract, CLI, CI, Kit Certified",
+        "endpoint": "https://agentic-kit.dev/llms.txt",
+        "methods": [
+          "GET"
+        ],
+        "parameters": []
+      },
+      {
+        "id": "doc-detail",
+        "name": "Individual Doc Spec",
+        "description": "Self-contained guidance for one Kit doc",
+        "endpoint": "https://agentic-kit.dev/llms/docs/{doc-id}.txt",
+        "methods": [
+          "GET"
+        ],
+        "parameters": [
+          "doc-id: string, required : one of: honesty-contract, cli, golden-path, ci, kit-certified, disclaimer, roadmap"
+        ]
+      },
+      {
+        "id": "policy-packs",
+        "name": "Policy Packs",
+        "description": "Blast-radius policy.json packs for Eve agents",
+        "endpoint": "https://agentic-kit.dev/policy-packs/{pack-id}.json",
+        "methods": [
+          "GET"
+        ],
+        "parameters": [
+          "pack-id: string, required : one of: support-bot, payments-high, design-tools"
+        ]
+      },
+      {
+        "id": "mcp-agentic-kit",
+        "name": "Agentic Kit MCP",
+        "description": "MCP resources and tools for docs, policy packs, and Eve inspect prompt",
+        "endpoint": "https://agentic-kit.dev/api/mcp",
+        "methods": [
+          "POST"
+        ],
+        "parameters": [
+          "resources: agentic-kit://library/full, agentic-kit://docs/{id}, agentic-kit://policy-packs/{id}",
+          "tools: list_docs, get_doc, list_policy_packs, get_policy_pack, get_full_library",
+          "prompt: inspect-eve-agent"
+        ]
+      }
+    ]
+  }
+}

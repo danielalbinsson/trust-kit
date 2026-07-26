@@ -1,0 +1,60 @@
+# Golden path
+
+> Clone a stamped agent → portrait → CI fail demo → intentional ack. The red/green moment Kit is built around.
+
+Product: Agentic Kit (https://agentic-kit.dev/)
+HTML: https://agentic-kit.dev/docs/golden-path
+Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+
+The conversion loop: clone a stamped agent → portrait → CI fail demo → intentional ack. This is the red/green moment Kit is built around.
+
+## 1. Clone a stamped agent
+
+```bash
+git clone https://github.com/danielalbinsson/eve-blueprints.git
+cd eve-blueprints/support-bot
+# Or inspect the bundled design-qa agent in Aletheia at ./agent
+```
+
+## 2. Build, then open the portrait
+
+```bash
+# In the agent workspace root (folder that contains agent/)
+eve build
+# In Aletheia: pnpm dev → Browse folder → pick support-bot
+# Or: ALETHEIA_WORKSPACE=/path/to/eve-blueprints/support-bot
+```
+
+Confirm facts are labelled **verified from build**.
+
+## 3. Commit a capability baseline
+
+```bash
+# After a clean portrait, commit the snapshot used by diff
+# agent/.aletheia/deployed-capabilities.json (generated / maintained by Aletheia CLI)
+git add agent/.aletheia .aletheia .github/workflows/capability-review.yml
+git commit -m "chore: capability baseline"
+```
+
+## 4. Expand authority on a branch
+
+```bash
+git checkout -b demo/add-connection
+# Add a new connection under agent/connections/ (e.g. stripe.ts)
+git add agent/connections && git commit -m "feat: add Stripe connection"
+npx @aletheia/cli diff --baseline git:main
+# → exit 1, authority expanded
+```
+
+## 5. Acknowledge intentional growth
+
+On the PR, add the `capability-change-ack` label after reviewing the sticky capability comment. Required checks stay red until the ack is present.
+
+See [CI gate](/docs/ci) for the workflow file.
+
+## Related
+
+- Index: https://agentic-kit.dev/llms.txt
+- Full corpus: https://agentic-kit.dev/llms-full.txt
+- Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- CLI: https://www.npmjs.com/package/@aletheia/cli

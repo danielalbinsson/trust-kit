@@ -1,0 +1,10 @@
+{
+  "name": "payments-high",
+  "description": "Strict pack when an agent can move money (Phase 2 content).",
+  "failOn": "elevated",
+  "rules": [
+    { "category": "payments", "severity": "high", "pattern": "stripe|adyen|paypal|refund|payout|transfer" },
+    { "category": "secrets", "severity": "high", "pattern": "infisical|vault|secret|credential" },
+    { "category": "infrastructure", "severity": "high", "pattern": "aws|gcp|azure|vercel|deploy" }
+  ]
+}

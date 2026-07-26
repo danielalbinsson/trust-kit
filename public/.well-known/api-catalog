@@ -1,0 +1,61 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://agentic-kit.dev/",
+      "describedby": [
+        {
+          "href": "https://agentic-kit.dev/llms.txt",
+          "type": "text/plain",
+          "title": "Agentic Kit index for coding agents"
+        },
+        {
+          "href": "https://agentic-kit.dev/llms-full.txt",
+          "type": "text/plain",
+          "title": "Full docs corpus as a single document"
+        }
+      ],
+      "sitemap": [
+        {
+          "href": "https://agentic-kit.dev/sitemap.xml",
+          "type": "application/xml",
+          "title": "HTML and agent asset sitemap"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://agentic-kit.dev/.well-known/ai",
+          "type": "application/json",
+          "title": "AI endpoint capability manifest"
+        },
+        {
+          "href": "https://agentic-kit.dev/docs",
+          "type": "text/html",
+          "title": "Human docs"
+        }
+      ],
+      "license": [
+        {
+          "href": "https://opensource.org/licenses/MIT",
+          "title": "Content licence (MIT)"
+        }
+      ]
+    },
+    {
+      "anchor": "https://agentic-kit.dev/api/mcp",
+      "service-desc": [
+        {
+          "href": "https://agentic-kit.dev/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "MCP server card (SEP-2127)"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://agentic-kit.dev/docs",
+          "type": "text/html",
+          "title": "Docs and MCP setup"
+        }
+      ]
+    }
+  ]
+}

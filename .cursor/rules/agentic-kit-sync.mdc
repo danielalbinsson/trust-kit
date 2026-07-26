@@ -1,0 +1,27 @@
+---
+description: Do not hand-edit generated agent discoverability files
+globs: public/llms/**,public/llms.txt,public/llms-full.txt,public/robots.txt,public/sitemap.xml,public/ai.txt,public/route-lastmod.json,public/.well-known/**
+alwaysApply: false
+---
+
+# Agentic Kit discoverability sync
+
+Canonical sources:
+
+- `src/data/docs.ts` — docs copy
+- `src/data/site.ts` — site meta and crawl policy
+
+Generated (do **not** hand-edit):
+
+- `public/llms.txt`, `public/llms-full.txt`, `public/llms/docs/*.txt`
+- `public/robots.txt`, `public/sitemap.xml`, `public/ai.txt`, `public/route-lastmod.json`
+- `public/.well-known/ai`, `public/.well-known/api-catalog`, `public/.well-known/mcp/server-card.json`
+
+After editing canonical data:
+
+```bash
+pnpm generate:llms
+pnpm generate:discoverability
+```
+
+`pnpm build` runs both via `prebuild`. Verify with `pnpm check:sync`.

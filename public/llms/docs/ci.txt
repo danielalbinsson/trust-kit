@@ -1,0 +1,44 @@
+# CI gate
+
+> Required check that fails when the agent gains power. Routine changes pass quietly.
+
+Product: Agentic Kit (https://agentic-kit.dev/)
+HTML: https://agentic-kit.dev/docs/ci
+Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+
+Ship a required check that fails when the agent gains power. Routine changes pass quietly.
+
+## What is elevated
+
+- New external reach (connections / channels)
+- New acts-on-its-own schedule
+- New delegation (subagent)
+- Lifted restriction / removed approval gate
+- Model or system-prompt change that expands authority
+
+## Policy
+
+```json
+// .aletheia/policy.json
+{
+  "failOn": "elevated",
+  "rules": [
+    { "category": "customer records", "severity": "high", "pattern": "zendesk|intercom" }
+  ]
+}
+```
+
+## Ack label
+
+Intentional merges use the GitHub label `capability-change-ack`. Without it, elevated diffs fail the required check.
+
+## Workflow
+
+Reference implementation: [Aletheia capability-review.yml](https://github.com/danielalbinsson/Aletheia/blob/main/.github/workflows/capability-review.yml). Stamped agents vendor a copy under `.github/workflows/`.
+
+## Related
+
+- Index: https://agentic-kit.dev/llms.txt
+- Full corpus: https://agentic-kit.dev/llms-full.txt
+- Aletheia skill: `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- CLI: https://www.npmjs.com/package/@aletheia/cli

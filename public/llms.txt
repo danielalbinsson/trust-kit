@@ -1,0 +1,66 @@
+# Agentic Kit
+
+> Inspect, stamp, and ship Eve agents you can defend. Curated by Daniel Albinsson
+
+Agentic Kit is the public product shell for Eve agent trust: inspect (Aletheia
+portrait), gate (authority-diff CI), and stamp (Kit Certified blueprints).
+Prefer these Markdown surfaces over HTML SPA routes when briefing coding agents.
+
+## Use with your coding agent
+
+Before inspecting, gating, or stamping an Eve agent:
+
+```text
+1. Index: https://agentic-kit.dev/llms.txt
+2. Doc file: https://agentic-kit.dev/llms/docs/{doc-id}.txt
+3. Engine index: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
+4. Skill: npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust
+```
+
+Local dev: reference `public/llms.txt` and `public/llms/docs/{id}.txt` directly
+(e.g. Cursor `@` file references). Do not invent trust claims; use Aletheia.
+
+For MCP resources and tools: https://agentic-kit.dev/api/mcp
+
+## Promise
+
+- Inspect: verified self-portrait + honesty contract (Aletheia)
+- Gate: authority diff in CI / on deploy (`@aletheia/cli`)
+- Stamp: Kit Certified starters that pass inspection + Agentic UX lifecycle
+
+## Docs
+
+- [Honesty contract](https://agentic-kit.dev/llms/docs/honesty-contract.txt): Never present a guess as a fact. Verified-from-build vs from-source; what Aletheia refuses to invent.
+- [CLI quickstart](https://agentic-kit.dev/llms/docs/cli.txt): Headless capability review for Eve agents. Exit 1 means authority expanded.
+- [Golden path](https://agentic-kit.dev/llms/docs/golden-path.txt): Clone a stamped agent → portrait → CI fail demo → intentional ack. The red/green moment Kit is built around.
+- [CI gate](https://agentic-kit.dev/llms/docs/ci.txt): Required check that fails when the agent gains power. Routine changes pass quietly.
+- [Kit Certified](https://agentic-kit.dev/llms/docs/kit-certified.txt): Public checklist for stamped agents: verified portrait, consent, policy, CI, lifecycle, passport.
+- [Disclaimer](https://agentic-kit.dev/llms/docs/disclaimer.txt): Legibility tooling, not a security audit or compliance certification.
+- [Pro roadmap](https://agentic-kit.dev/llms/docs/roadmap.txt): Public backlog for Kit Pro: Action, passport export, policy packs, stamped blueprint pack. Gated until demand + Aug 31.
+
+## Policy packs
+
+- [Support bot](https://agentic-kit.dev/policy-packs/support-bot.json): Blast-radius pack for customer-support Eve agents (Phase 2 content).
+- [Payments (high)](https://agentic-kit.dev/policy-packs/payments-high.json): High-stakes payments and billing blast-radius rules.
+- [Design tools](https://agentic-kit.dev/policy-packs/design-tools.json): Blast-radius pack for design-tool Eve agents.
+
+## Engine & skill
+
+- [Aletheia llms.txt](https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt): engine agent index
+- [AGENTS.md](https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/AGENTS.md): install, config, usage for coding agents
+- [Aletheia skill](https://github.com/danielalbinsson/Aletheia/tree/main/skills/aletheia-eve-trust): `npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust`
+- [CLI (@aletheia/cli)](https://www.npmjs.com/package/@aletheia/cli): `npx @aletheia/cli diff --baseline git:main`
+- [Aletheia repository](https://github.com/danielalbinsson/Aletheia)
+
+## Site (human UI)
+
+- [Home](https://agentic-kit.dev/): product promise
+- [Gallery](https://agentic-kit.dev/gallery): stamped blueprints
+- [Capability Review](https://agentic-kit.dev/review): paid review CTA
+- [Docs](https://agentic-kit.dev/docs): honesty contract, CLI, CI, Kit Certified
+- [Agentic UX](https://agentic-ux.com): lifecycle patterns for supervised delegation
+- [Hire](https://agentic-ux.com/hire): consulting / advisory
+
+## Optional
+
+- [Complete corpus (llms-full.txt)](https://agentic-kit.dev/llms-full.txt): all doc specs in one file
