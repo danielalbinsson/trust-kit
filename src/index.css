@@ -105,6 +105,13 @@ code,
   color: var(--color-muted);
 }
 
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
 .display {
   font-weight: 100;
   letter-spacing: -0.03em;

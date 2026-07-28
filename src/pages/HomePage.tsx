@@ -41,12 +41,12 @@ export function HomePage() {
             Walk the golden path
             <ArrowRight size={18} weight="bold" className="shrink-0" />
           </Link>
-          <a className="btn btn-secondary w-full sm:w-auto" href={LINKS.aletheia}>
-            Open Aletheia
-          </a>
           <Link className="btn btn-secondary w-full min-w-0 sm:w-auto" to="/docs/cli">
             <code className="truncate text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
           </Link>
+          <a className="text-link text-link-tap text-sm" href={LINKS.aletheia}>
+            Open Aletheia
+          </a>
         </div>
       </section>
 
@@ -63,7 +63,7 @@ export function HomePage() {
             >
               <div className="flex items-center justify-between gap-3">
                 <layer.icon size={28} weight="thin" className="text-teal" aria-hidden />
-                <span className="eyebrow !text-muted">{layer.step}</span>
+                <span className="step-num">{layer.step}</span>
               </div>
               <h2 className="mt-5 text-2xl tracking-tight">{layer.title}</h2>
               <p className="mt-3 text-base leading-relaxed text-ink-soft">{layer.body}</p>
@@ -116,8 +116,7 @@ export function HomePage() {
       <section className="mx-auto mt-24 max-w-6xl px-5 pb-8 md:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="eyebrow">Kit Certified gallery</p>
-            <h2 className="display mt-3 text-3xl md:text-4xl">
+            <h2 className="display text-3xl md:text-4xl">
               Agents you can open before you run.
             </h2>
           </div>

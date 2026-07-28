@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const links = [
   { to: "/gallery", label: "Gallery" },
   { to: "/docs", label: "Docs" },
-  { to: "/review", label: "Review" },
+  { to: "/review", label: "Capability Review" },
 ];
 
 export function Nav() {
@@ -20,7 +20,7 @@ export function Nav() {
               to={link.to}
               className={({ isActive }) =>
                 [
-                  "inline-flex min-h-11 items-center rounded-full px-3 py-2 text-sm font-normal transition-colors duration-[var(--duration-normal)]",
+                  "inline-flex min-h-11 items-center rounded-full px-2 py-2 text-xs font-normal transition-colors duration-[var(--duration-normal)] sm:px-3 sm:text-sm",
                   isActive ? "bg-ink" : "text-ink-soft hover:bg-black/5",
                 ].join(" ")
               }

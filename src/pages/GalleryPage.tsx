@@ -41,7 +41,15 @@ export function GalleryPage() {
 
       <div className="mt-14 grid gap-8">
         {agents.map((agent) => (
-          <article key={agent.name} className="panel overflow-hidden md:grid md:grid-cols-2">
+          <article
+            key={agent.name}
+            className="panel overflow-hidden md:grid md:grid-cols-2"
+            aria-label={
+              agent.stamped
+                ? `${agent.name}, Kit Certified`
+                : `${agent.name}, blueprint pack`
+            }
+          >
             <img
               src={agent.img}
               alt={`${agent.name} portrait`}
