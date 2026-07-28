@@ -28,3 +28,4 @@ dist-ssr
 # a trailing "# ..." on a pattern line becomes part of the pattern and matches nothing.
 /plans/private/
 /plans/PORTFOLIO-REVIEW.md
+/plans/POSITIONING.md
