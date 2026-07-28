@@ -2,7 +2,7 @@
   "aiendpoint": {
     "service": {
       "name": "Agentic Kit",
-      "description": "See what an Eve agent can do before you run it. Inspect, stamp, and ship agents you can defend.",
+      "description": "Supervised delegation for Eve builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
       "provider": "Daniel Albinsson"
     },
     "capabilities": [

@@ -1,5 +1,6 @@
 import { ArrowRight, Eye, SealCheck, ShieldCheck } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
+import { site } from "../data/site";
 import { LINKS } from "../lib/links";
 
 const layers = [
@@ -20,7 +21,7 @@ const layers = [
     step: "03",
     icon: SealCheck,
     title: "Stamp",
-    body: "Kit Certified blueprints already ship with consent, policy, CI, and lifecycle UX. Start from something you can defend.",
+    body: "Kit Certified blueprints ship consent, policy, CI, and Before / While / After lifecycle docs from Agentic UX.",
   },
 ];
 
@@ -28,30 +29,42 @@ export function HomePage() {
   return (
     <>
       <section className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
-        <p className="eyebrow fade-up">Agentic Kit</p>
+        <p className="eyebrow fade-up">
+          {site.authorName} · {site.authorTitle} ·{" "}
+          <a className="text-link" href={site.agenticUxUrl}>
+            Agentic UX
+          </a>
+        </p>
         <h1 className="display fade-up-delay mt-5 max-w-4xl text-5xl md:text-7xl">
-          See what an Eve agent can do before you run it.
+          {site.heroHeadline}
         </h1>
-        <p className="lead fade-up-delay-2 mt-6">
-          Inspect, stamp, and ship agents you can defend. Local-first trust for
-          filesystem-first Eve builders.
+        <p className="lead fade-up-delay-2 mt-6 max-w-3xl">{site.heroLead}</p>
+        <p className="fade-up-delay-2 mt-4 max-w-3xl text-base leading-relaxed text-ink-soft">
+          {site.heroSubline}
+        </p>
+        <p className="fade-up-delay-2 mt-4 text-sm text-muted">
+          Legibility tooling, not a security audit.{" "}
+          <Link className="text-link" to="/docs/disclaimer">
+            Disclaimer
+          </Link>
+          .
         </p>
         <div className="fade-up-delay-2 mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5 sm:gap-y-3">
-          <Link className="btn btn-primary w-full min-w-0 sm:w-auto" to="/docs/cli">
-            <code className="truncate text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
+          <Link className="btn btn-primary w-full min-w-0 sm:w-auto" to="/docs/golden-path">
+            Walk the golden path
             <ArrowRight size={18} weight="bold" className="shrink-0" />
           </Link>
           <a className="btn btn-secondary w-full sm:w-auto" href={LINKS.aletheia}>
             Open Aletheia
           </a>
-          <Link className="btn btn-secondary w-full sm:w-auto" to="/review">
-            Book a Capability Review
+          <Link className="btn btn-secondary w-full min-w-0 sm:w-auto" to="/docs/cli">
+            <code className="truncate text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
           </Link>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 md:px-8">
-        <p className="eyebrow">Three layers · one brand</p>
+        <p className="eyebrow">{site.homeLayersEyebrow}</p>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {layers.map((layer) => (
             <div
@@ -81,8 +94,9 @@ export function HomePage() {
                 Authority expanded. Review required.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                A teammate adds Stripe on a branch. The capability check fails.
-                You see the blast radius before credentials go live.
+                A teammate adds Stripe on a branch. The capability check fails before
+                credentials go live. Same bar when supervision matters: refunds that ask
+                first, reach widened in silence.
               </p>
               <pre className="cli-snippet" tabIndex={0}>
                 <code>

@@ -17,6 +17,9 @@ Avoid a second brand (“Trust Kit”) on UI. “Trust” may appear as category
 ## Tone
 
 - Direct, specific, assumes competence
+- Humble scope: legibility tooling, not audits or category ownership ("the place for…")
+- Lead with design stakes (supervised delegation, lifecycle) before enforcement mechanics (CLI, CI)
+- Designer authorship visible on primary surfaces; first person on solo services
 - No emojis, no infantilizing language, max one exclamation per page
 - Prefer period / colon over habitual em dashes
 - No “not just X, it’s Y” cadence

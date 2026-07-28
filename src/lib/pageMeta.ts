@@ -12,7 +12,7 @@ export type PageMeta = {
 export function resolvePageMeta(path: string): PageMeta {
   if (path === "/") {
     return {
-      title: `${SITE_TITLE} · Eve agent trust`,
+      title: `${SITE_TITLE} · ${site.metaTitleSuffix}`,
       description: site.metaDescription,
       path: "/",
       ogType: "website",
@@ -51,7 +51,7 @@ export function resolvePageMeta(path: string): PageMeta {
   }
 
   return {
-    title: `${SITE_TITLE} · Eve agent trust`,
+    title: `${SITE_TITLE} · ${site.metaTitleSuffix}`,
     description: site.metaDescription,
     path: "/",
   };

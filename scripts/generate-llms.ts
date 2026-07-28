@@ -48,9 +48,9 @@ function formatIndex(): string {
   return [
     `# ${site.productName}`,
     "",
-    `> ${site.siteTagline} Curated by ${site.authorName}`,
+    `> ${site.siteTagline} By ${site.authorName}, ${site.authorTitle.toLowerCase()}.`,
     "",
-    "Agentic Kit is the public product shell for Eve agent trust: inspect (Aletheia",
+    "Agentic Kit enforces Agentic UX lifecycle patterns on Eve: inspect (Aletheia",
     "portrait), gate (authority-diff CI), and stamp (Kit Certified blueprints).",
     "Prefer these Markdown surfaces over HTML SPA routes when briefing coding agents.",
     "",

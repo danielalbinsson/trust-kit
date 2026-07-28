@@ -6,12 +6,22 @@ export const site = {
   siteTitle: "Agentic Kit",
   siteShortName: "Kit",
   productName: "Agentic Kit",
-  siteTagline: "Inspect, stamp, and ship Eve agents you can defend.",
+  siteTagline: "Agentic UX patterns, enforced on Eve.",
+  metaTitleSuffix: "Supervised delegation on Eve",
   metaDescription:
-    "See what an Eve agent can do before you run it. Inspect, stamp, and ship agents you can defend.",
-  heroThesis: "Inspect, stamp, and ship agents you can defend.",
+    "Supervised delegation for Eve builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
+  heroHeadline: "See what an Eve agent can do before you run it.",
+  heroLead:
+    "Agents act on your behalf. The design job is making that reach legible to your team before merge.",
   heroSubline:
-    "Trust tooling for Eve builders: Aletheia portraits, authority-diff CI, and Kit Certified blueprints.",
+    "Patterns from Agentic UX, enforced with Aletheia portraits, authority-diff CI, and Kit Certified blueprints.",
+  authorByline: "Daniel Albinsson · Designer · author of Agentic UX",
+  homeLayersEyebrow: "Design to enforcement",
+  footerBlurb:
+    "Open tooling for Eve teams who need legibility before merge. Patterns from Agentic UX, enforced with Aletheia.",
+  docsIndexHeadline: "How supervised delegation shows up on Eve.",
+  docsIndexLead:
+    "Design commitments and enforcement: honesty contract, lifecycle docs, CLI, CI gate, and the golden path from clone to red/green.",
   authorName: "Daniel Albinsson",
   authorTitle: "Designer",
   authorSite: "https://www.danielalbinsson.com",
@@ -47,14 +57,14 @@ export const site = {
   ogImagePath: "/og-image.png",
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Agentic Kit — See what an Eve agent can do before you run it.",
+  ogImageAlt: "Agentic Kit — supervised delegation for Eve agents",
   twitterCard: "summary_large_image" as const,
   galleryMetaDescription:
     "Stamped Eve agent blueprints that pass Aletheia inspection and the Kit Certified checklist.",
   reviewMetaDescription:
-    "Book a Capability Review: see what your Eve agent can touch, what it does alone, and whether this PR made it more powerful.",
+    "Fixed-scope Capability Review: capability one-pager for stakeholders, Kit Certified gap list for your team.",
   docsIndexMetaDescription:
-    "Honesty contract, CLI, MCP server, CI gate, Kit Certified checklist, and the golden path from clone to red/green.",
+    "Supervised delegation on Eve: honesty contract, lifecycle docs, CLI, CI gate, Kit Certified, and the golden path.",
 } as const;
 
 export const SITE_TITLE = site.siteTitle;

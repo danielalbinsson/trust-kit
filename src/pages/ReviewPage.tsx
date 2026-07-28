@@ -16,8 +16,8 @@ export function ReviewPage() {
         Capability Review
       </h1>
       <p className="lead fade-up-delay-2 mt-6">
-        A fixed-scope review of your Eve agent repo. Stakeholders get a one-pager
-        they trust; you get a stamp checklist you can ship against.
+        I run fixed-scope reviews of Eve agent repos. Stakeholders get a capability
+        one-pager; you get a Kit Certified gap list to ship against.
       </p>
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -42,8 +42,8 @@ export function ReviewPage() {
 
           <h2 className="mt-10 text-2xl tracking-tight">Support boundary</h2>
           <p className="mt-4 text-base leading-relaxed text-ink-soft">
-            We review capability, consent, policy, and lifecycle legibility. We
-            do not debug model quality, prompt craft, or product outcome metrics.
+            I review capability, consent, policy, and lifecycle legibility. I do
+            not debug model quality, prompt craft, or product outcome metrics.
           </p>
           <p className="mt-4 text-sm text-muted">
             This is not a security audit or penetration test.{" "}

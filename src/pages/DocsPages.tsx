@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { DocMarkdown } from "../components/DocMarkdown";
 import { DocsLayout } from "../components/DocsLayout";
 import { DOCS_NAV, getDoc, type DocId } from "../data/docs";
+import { site } from "../data/site";
 
 export function DocsIndexPage() {
   const main = DOCS_NAV.filter((item) => item.id !== "roadmap");
@@ -11,12 +12,9 @@ export function DocsIndexPage() {
     <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
       <p className="eyebrow fade-up">Docs</p>
       <h1 className="display fade-up-delay mt-4 text-4xl md:text-6xl">
-        How trust shows up on Eve.
+        {site.docsIndexHeadline}
       </h1>
-      <p className="lead fade-up-delay-2 mt-6">
-        Honesty contract, CLI, MCP server, CI gate, Kit Certified checklist, and the
-        golden path from clone to red/green.
-      </p>
+      <p className="lead fade-up-delay-2 mt-6">{site.docsIndexLead}</p>
       <div className="mt-12 grid gap-3 sm:grid-cols-2">
         {main.map((item) => (
           <Link key={item.to} to={item.to} className="panel-link p-6">

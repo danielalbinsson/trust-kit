@@ -52,7 +52,7 @@ export function globalJsonLdGraph(): Record<string, unknown>[] {
       applicationCategory: "DeveloperApplication",
       operatingSystem: "Any",
       url: site.siteUrl,
-      description: site.metaDescription,
+      description: `${site.metaDescription} Patterns from Agentic UX.`,
       author: { "@id": PERSON_ID },
       publisher: { "@id": ORG_ID },
       offers: {
@@ -113,7 +113,8 @@ export function docPageJsonLd(id: DocId): Record<string, unknown>[] {
       inLanguage: "en",
       keywords: [
         "Eve agent",
-        "agent trust",
+        "supervised delegation",
+        "Agentic UX",
         "Aletheia",
         "capability review",
         "Kit Certified",

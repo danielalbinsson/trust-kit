@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { site } from "../data/site";
 import { LINKS } from "../lib/links";
 
 export function Footer() {
@@ -8,12 +9,7 @@ export function Footer() {
         <div>
           <p className="text-2xl tracking-tight">Agentic Kit</p>
           <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">
-            The place Eve builders go to inspect, stamp, and ship agents they can
-            defend. Powered by{" "}
-            <a className="text-link" href={LINKS.aletheia}>
-              Aletheia
-            </a>
-            .
+            {site.footerBlurb}
           </p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-normal text-ink-soft">
