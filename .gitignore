@@ -24,4 +24,7 @@ dist-ssr
 *.sw?
 .vercel
 
-/plans/* # ignore plans folder
+# Private strategy material. NOTE: gitignore has no inline comments —
+# a trailing "# ..." on a pattern line becomes part of the pattern and matches nothing.
+/plans/private/
+/plans/PORTFOLIO-REVIEW.md
