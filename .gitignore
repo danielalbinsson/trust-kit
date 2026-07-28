@@ -24,8 +24,7 @@ dist-ssr
 *.sw?
 .vercel
 
-# Private strategy material. NOTE: gitignore has no inline comments —
-# a trailing "# ..." on a pattern line becomes part of the pattern and matches nothing.
-/plans/private/
-/plans/PORTFOLIO-REVIEW.md
-/plans/POSITIONING.md
+# Strategy material stays local — never tracked.
+# NOTE: gitignore has no inline comments. A trailing "# ..." on a pattern line
+# becomes part of the pattern and silently matches nothing. Do not add one here.
+/plans/
