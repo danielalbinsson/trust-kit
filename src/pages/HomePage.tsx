@@ -29,25 +29,12 @@ export function HomePage() {
   return (
     <>
       <section className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
-        <p className="eyebrow fade-up">
-          {site.authorName} · {site.authorTitle} ·{" "}
-          <a className="text-link" href={site.agenticUxUrl}>
-            Agentic UX
-          </a>
-        </p>
-        <h1 className="display fade-up-delay mt-5 max-w-4xl text-5xl md:text-7xl">
+        <h1 className="display fade-up max-w-4xl text-5xl md:text-7xl">
           {site.heroHeadline}
         </h1>
         <p className="lead fade-up-delay-2 mt-6 max-w-3xl">{site.heroLead}</p>
         <p className="fade-up-delay-2 mt-4 max-w-3xl text-base leading-relaxed text-ink-soft">
           {site.heroSubline}
-        </p>
-        <p className="fade-up-delay-2 mt-4 text-sm text-muted">
-          Legibility tooling, not a security audit.{" "}
-          <Link className="text-link" to="/docs/disclaimer">
-            Disclaimer
-          </Link>
-          .
         </p>
         <div className="fade-up-delay-2 mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5 sm:gap-y-3">
           <Link className="btn btn-primary w-full min-w-0 sm:w-auto" to="/docs/golden-path">
