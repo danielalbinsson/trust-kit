@@ -10,7 +10,18 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-paper/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4 md:px-8">
-        <NavLink to="/" className="rounded-sm text-xl tracking-tight text-ink md:text-2xl">
+        <NavLink
+          to="/"
+          className="inline-flex items-center gap-2.5 rounded-sm text-xl tracking-tight text-ink md:gap-3 md:text-2xl"
+        >
+          <img
+            src="/favicon.svg"
+            alt=""
+            width={28}
+            height={28}
+            className="size-6 shrink-0 md:size-7"
+            aria-hidden
+          />
           Agentic Kit
         </NavLink>
         <nav className="flex items-center gap-1 sm:gap-2" aria-label="Primary">
