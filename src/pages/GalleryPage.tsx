@@ -45,7 +45,7 @@ export function GalleryPage() {
             <img
               src={agent.img}
               alt={`${agent.name} portrait`}
-              className="aspect-[4/3] w-full object-cover object-top md:aspect-auto md:min-h-[320px]"
+              className="aspect-[16/10] max-h-52 w-full object-cover object-top md:aspect-auto md:max-h-none md:min-h-[320px]"
             />
             <div className="flex flex-col justify-center p-8 md:p-10">
               <div className="flex flex-wrap items-center gap-3">

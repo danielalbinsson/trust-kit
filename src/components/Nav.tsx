@@ -20,7 +20,7 @@ export function Nav() {
               to={link.to}
               className={({ isActive }) =>
                 [
-                  "rounded-full px-3 py-1.5 text-sm font-normal transition-colors duration-[var(--duration-normal)]",
+                  "inline-flex min-h-11 items-center rounded-full px-3 py-2 text-sm font-normal transition-colors duration-[var(--duration-normal)]",
                   isActive ? "bg-ink" : "text-ink-soft hover:bg-black/5",
                 ].join(" ")
               }

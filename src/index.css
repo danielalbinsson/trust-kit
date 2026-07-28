@@ -128,6 +128,13 @@ code,
   font-weight: 400;
 }
 
+.text-link-tap {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.25rem 0;
+}
+
 .text-link:hover {
   text-decoration-color: var(--color-teal);
 }
@@ -167,7 +174,7 @@ code,
   background: transparent;
   color: var(--color-ink);
   /* ≥3:1 non-text contrast on paper */
-  box-shadow: inset 0 0 0 1px #8f8e8c;
+  box-shadow: inset 0 0 0 1px #6b6a68;
 }
 
 .btn-secondary:hover {
@@ -289,6 +296,8 @@ code,
 
 .cli-snippet {
   margin-top: 1.5rem;
+  max-width: 100%;
+  min-width: 0;
   border-radius: var(--radius-md);
   background: var(--color-ink);
   color: #e8e8e8;
@@ -297,6 +306,13 @@ code,
   font-size: 0.8125rem;
   line-height: 1.55;
   box-shadow: var(--shadow-elevated);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cli-snippet code {
+  display: block;
+  min-width: 0;
 }
 
 .cli-snippet .ok {

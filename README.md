@@ -80,3 +80,8 @@ pnpm generate:discoverability
 pnpm check:sync
 pnpm validate:jsonld
 ```
+
+## About the author
+
+Built by [Daniel Albinsson](https://danielalbinsson.com). [Agentic UX](https://agentic-ux.com) framework author.
+[Hire / consult](https://agentic-ux.com/hire) · [Capability Review](https://agentic-kit.dev/review)

@@ -226,11 +226,11 @@ A Kit Certified agent is not "looks nice." It meets this public checklist:
 4. `aletheia diff` green in CI against a committed baseline
 5. Before / While / After lifecycle documented (Agentic UX)
 6. Intentional restrictions (disabled framework tools) visible as "cannots"
-7. One-page passport markdown generated from the portrait for stakeholders
+7. One-page passport markdown for stakeholders (hand-authored to match the portrait today; `aletheia passport` generation is Phase 2)
 
 Selling blueprints without the stamp is just another template repo. This checklist is the public definition of **Kit Certified**.
 
-Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprints/tree/main/support-bot) · [design-qa (bundled)](https://github.com/danielalbinsson/Aletheia/tree/main/agent)
+Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprints/tree/main/support-bot) · [Beacon](https://github.com/danielalbinsson/Aletheia/tree/main/examples/beacon) · [design-qa (bundled)](https://github.com/danielalbinsson/Aletheia/tree/main/agent)
 
 ## Related
 

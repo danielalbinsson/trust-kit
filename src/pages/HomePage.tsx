@@ -36,15 +36,15 @@ export function HomePage() {
           Inspect, stamp, and ship agents you can defend. Local-first trust for
           filesystem-first Eve builders.
         </p>
-        <div className="fade-up-delay-2 mt-10 flex flex-wrap items-center gap-x-5 gap-y-3">
-          <Link className="btn btn-primary" to="/docs/cli">
-            <code className="text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
-            <ArrowRight size={18} weight="bold" />
+        <div className="fade-up-delay-2 mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5 sm:gap-y-3">
+          <Link className="btn btn-primary w-full min-w-0 sm:w-auto" to="/docs/cli">
+            <code className="truncate text-sm text-inherit">npx @danielalbinsson/aletheia-cli</code>
+            <ArrowRight size={18} weight="bold" className="shrink-0" />
           </Link>
-          <a className="btn btn-secondary" href={LINKS.aletheia}>
+          <a className="btn btn-secondary w-full sm:w-auto" href={LINKS.aletheia}>
             Open Aletheia
           </a>
-          <Link className="text-link text-sm" to="/review">
+          <Link className="btn btn-secondary w-full sm:w-auto" to="/review">
             Book a Capability Review
           </Link>
         </div>
@@ -74,8 +74,8 @@ export function HomePage() {
 
       <section className="mx-auto mt-24 max-w-6xl px-5 md:px-8">
         <div className="panel overflow-hidden">
-          <div className="grid md:grid-cols-2">
-            <div className="flex flex-col justify-center p-8 md:p-12">
+          <div className="grid min-w-0 md:grid-cols-2">
+            <div className="flex min-w-0 flex-col justify-center p-5 md:p-12">
               <p className="eyebrow">The red/green moment</p>
               <h2 className="display mt-4 text-3xl md:text-4xl">
                 Authority expanded. Review required.
@@ -93,7 +93,10 @@ export function HomePage() {
                   <span className="ok"># add label capability-change-ack to merge</span>
                 </code>
               </pre>
-              <Link to="/docs/golden-path" className="text-link mt-8 inline-flex items-center gap-2 text-sm">
+              <Link
+                to="/docs/golden-path"
+                className="text-link text-link-tap mt-8 inline-flex items-center gap-2 text-sm"
+              >
                 Walk the golden path
                 <ArrowRight size={16} />
               </Link>

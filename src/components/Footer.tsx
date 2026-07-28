@@ -16,12 +16,12 @@ export function Footer() {
             .
           </p>
         </div>
-        <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm font-normal text-ink-soft">
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/docs">Docs</Link>
-          <Link to="/review">Capability Review</Link>
-          <a href={LINKS.agenticUx}>Agentic UX</a>
-          <a href={LINKS.hire}>Hire</a>
+        <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-normal text-ink-soft">
+          <Link className="inline-flex min-h-11 items-center" to="/gallery">Gallery</Link>
+          <Link className="inline-flex min-h-11 items-center" to="/docs">Docs</Link>
+          <Link className="inline-flex min-h-11 items-center" to="/review">Capability Review</Link>
+          <a className="inline-flex min-h-11 items-center" href={LINKS.agenticUx}>Agentic UX</a>
+          <a className="inline-flex min-h-11 items-center" href={LINKS.hire}>Hire</a>
         </div>
       </div>
       <div className="mx-auto max-w-6xl px-5 pb-10 md:px-8">

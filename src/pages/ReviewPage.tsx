@@ -21,7 +21,7 @@ export function ReviewPage() {
       </p>
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="panel p-8 md:p-10">
+        <div className="panel order-2 p-8 md:p-10 lg:order-1">
           <h2 className="text-2xl tracking-tight">What you get</h2>
           <ul className="mt-6 space-y-4">
             {deliverables.map((item) => (
@@ -54,24 +54,21 @@ export function ReviewPage() {
           </p>
         </div>
 
-        <div className="panel flex flex-col justify-between bg-ink p-8 text-white md:p-10">
+        <div className="panel order-1 flex flex-col justify-between p-8 md:p-10 lg:order-2">
           <div>
-            <p className="eyebrow !text-white/70">Intake</p>
-            <h2 className="mt-3 text-3xl tracking-tight text-white">Request a review</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/80">
+            <p className="eyebrow">Intake</p>
+            <h2 className="mt-3 text-3xl tracking-tight">Request a review</h2>
+            <p className="mt-4 text-base leading-relaxed text-ink-soft">
               Email the repo URL (or grant temporary read access), the channels
               it will use, and when you need the report.
             </p>
-            <ol className="mt-6 list-decimal space-y-2 pl-5 text-sm text-white/80">
+            <ol className="mt-6 list-decimal space-y-2 pl-5 text-sm text-ink-soft">
               <li>Repo link + branch to review</li>
               <li>Intended deployment (Slack, Linear, …)</li>
               <li>Deadline / stakeholder audience</li>
             </ol>
           </div>
-          <a
-            className="btn btn-primary mt-10 !bg-white !text-ink hover:!bg-paper"
-            href={LINKS.email}
-          >
+          <a className="btn btn-primary mt-10" href={LINKS.email}>
             <EnvelopeSimple size={18} />
             daniel.Albinsson@pm.me
           </a>
