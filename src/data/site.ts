@@ -54,7 +54,7 @@ export const site = {
   reviewMetaDescription:
     "Book a Capability Review: see what your Eve agent can touch, what it does alone, and whether this PR made it more powerful.",
   docsIndexMetaDescription:
-    "Honesty contract, CLI, CI gate, Kit Certified checklist, and the golden path from clone to red/green.",
+    "Honesty contract, CLI, MCP server, CI gate, Kit Certified checklist, and the golden path from clone to red/green.",
 } as const;
 
 export const SITE_TITLE = site.siteTitle;

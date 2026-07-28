@@ -25,7 +25,7 @@
           "GET"
         ],
         "parameters": [
-          "doc-id: string, required : one of: honesty-contract, cli, golden-path, ci, kit-certified, disclaimer, roadmap"
+          "doc-id: string, required : one of: honesty-contract, cli, mcp, golden-path, ci, kit-certified, disclaimer, roadmap"
         ]
       },
       {

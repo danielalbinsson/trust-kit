@@ -3,6 +3,7 @@ import { Layout } from "./components/Layout";
 import {
   CiPage,
   CliPage,
+  McpPage,
   DisclaimerPage,
   DocsIndexPage,
   GoldenPathPage,
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="docs" element={<DocsIndexPage />} />
           <Route path="docs/honesty-contract" element={<HonestyContractPage />} />
           <Route path="docs/cli" element={<CliPage />} />
+          <Route path="docs/mcp" element={<McpPage />} />
           <Route path="docs/golden-path" element={<GoldenPathPage />} />
           <Route path="docs/ci" element={<CiPage />} />
           <Route path="docs/kit-certified" element={<KitCertifiedPage />} />

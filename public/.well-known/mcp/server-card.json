@@ -7,7 +7,7 @@
     "version": "0.1.0",
     "description": "Agentic Kit docs, policy packs, and pointers to Aletheia for Eve agent trust.",
     "homepage": "https://agentic-kit.dev/",
-    "documentationUrl": "https://agentic-kit.dev/docs"
+    "documentationUrl": "https://agentic-kit.dev/docs/mcp"
   },
   "transport": {
     "type": "streamable-http",
@@ -46,6 +46,7 @@
             "enum": [
               "honesty-contract",
               "cli",
+              "mcp",
               "golden-path",
               "ci",
               "kit-certified",

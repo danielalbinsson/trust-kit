@@ -1,6 +1,9 @@
+import { site } from "./site.js";
+
 export type DocId =
   | "honesty-contract"
   | "cli"
+  | "mcp"
   | "golden-path"
   | "ci"
   | "kit-certified"
@@ -85,6 +88,64 @@ npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust
 - \`0\` — ok
 - \`1\` — authority expanded
 - \`2\` — error`,
+  },
+  {
+    id: "mcp",
+    title: "MCP server",
+    summary:
+      "Connect Cursor and other MCP clients to Kit docs, policy packs, and the inspect-eve-agent prompt.",
+    body: `When deployed, Agentic Kit exposes an MCP server over Streamable HTTP. No API keys or config — the server reads public docs and policy packs at runtime.
+
+## Endpoint
+
+- **URL:** ${site.mcpServerUrl}
+- **Transport:** Streamable HTTP
+- **Server card:** [/.well-known/mcp/server-card.json](/.well-known/mcp/server-card.json) (machine-readable manifest)
+
+## Cursor
+
+Add to \`.cursor/mcp.json\` or **Cursor Settings → MCP**:
+
+\`\`\`json
+{
+  "mcpServers": {
+    "agentic-kit": {
+      "url": "${site.mcpServerUrl}"
+    }
+  }
+}
+\`\`\`
+
+Restart Cursor (or reload MCP) after saving. The server should appear in your MCP tool list.
+
+## Claude Desktop and other clients
+
+Use the same URL with Streamable HTTP transport. Consult your client's MCP docs for the exact config shape; most accept a remote \`url\` field.
+
+## Resources (preferred)
+
+Use MCP **resources** when your client supports them — they map directly to Kit's llms corpus:
+
+| URI | Purpose |
+|-----|---------|
+| \`agentic-kit://library/full\` | Entire corpus (\`llms-full.txt\`) |
+| \`agentic-kit://docs/{id}\` | One doc spec (e.g. \`agentic-kit://docs/honesty-contract\`) |
+| \`agentic-kit://policy-packs/{id}\` | Policy pack JSON (e.g. \`agentic-kit://policy-packs/support-bot\`) |
+
+## Tools
+
+Legacy list/read helpers (\`list_docs\`, \`get_doc\`, \`list_policy_packs\`, \`get_policy_pack\`, \`get_full_library\`). Prefer resources when browsing or attaching context.
+
+## Prompt
+
+**\`inspect-eve-agent\`** — pre-built inspection workflow with Aletheia honesty rules. Args: \`agentPath\` (required), \`goal\` (optional).
+
+Pair with the [Aletheia skill](${site.aletheiaSkillUrl}) and [CLI quickstart](/docs/cli) for headless diffing.
+
+## Also available
+
+- [llms.txt](/llms.txt) — index for agents that do not use MCP
+- [API catalog](/.well-known/api-catalog) — linkset for discovery bots`,
   },
   {
     id: "golden-path",

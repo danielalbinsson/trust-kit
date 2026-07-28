@@ -51,9 +51,9 @@
       ],
       "service-doc": [
         {
-          "href": "https://agentic-kit.dev/docs",
+          "href": "https://agentic-kit.dev/docs/mcp",
           "type": "text/html",
-          "title": "Docs and MCP setup"
+          "title": "MCP setup and docs"
         }
       ]
     }

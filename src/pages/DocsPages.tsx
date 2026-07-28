@@ -14,8 +14,8 @@ export function DocsIndexPage() {
         How trust shows up on Eve.
       </h1>
       <p className="lead fade-up-delay-2 mt-6">
-        Honesty contract, CLI, CI gate, Kit Certified checklist, and the golden path
-        from clone to red/green.
+        Honesty contract, CLI, MCP server, CI gate, Kit Certified checklist, and the
+        golden path from clone to red/green.
       </p>
       <div className="mt-12 grid gap-3 sm:grid-cols-2">
         {main.map((item) => (
@@ -53,6 +53,10 @@ export function HonestyContractPage() {
 
 export function CliPage() {
   return <DocPage id="cli" />;
+}
+
+export function McpPage() {
+  return <DocPage id="mcp" />;
 }
 
 export function GoldenPathPage() {

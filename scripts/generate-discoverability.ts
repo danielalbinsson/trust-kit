@@ -121,7 +121,7 @@ function formatMcpServerCard(): string {
         description:
           "Agentic Kit docs, policy packs, and pointers to Aletheia for Eve agent trust.",
         homepage: abs("/"),
-        documentationUrl: abs("/docs"),
+        documentationUrl: abs("/docs/mcp"),
       },
       transport: {
         type: "streamable-http",
@@ -307,9 +307,9 @@ function formatApiCatalog(): string {
           ],
           "service-doc": [
             {
-              href: abs("/docs"),
+              href: abs("/docs/mcp"),
               type: "text/html",
-              title: "Docs and MCP setup",
+              title: "MCP setup and docs",
             },
           ],
         },
