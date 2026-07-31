@@ -16,9 +16,10 @@
     "generate:llms": "tsx scripts/generate-llms.ts",
     "generate:discoverability": "tsx scripts/generate-discoverability.ts",
     "validate:jsonld": "tsx scripts/validate-jsonld.ts",
+    "check:passports": "tsx scripts/check-passports.ts",
     "check:sync": "pnpm generate:llms && pnpm generate:discoverability && git diff --exit-code public/llms.txt public/llms/ public/robots.txt public/sitemap.xml public/route-lastmod.json public/llms-full.txt public/ai.txt public/.well-known/",
     "prebuild": "pnpm generate:llms && pnpm generate:discoverability",
-    "build": "tsc -b && vite build && tsx scripts/prerender.ts",
+    "build": "pnpm check:passports && tsc -b && vite build && tsx scripts/prerender.ts",
     "lint": "oxlint",
     "preview": "vite preview"
   },

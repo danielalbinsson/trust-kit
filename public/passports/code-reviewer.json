@@ -1,0 +1,55 @@
+{
+  "schema": "aletheia.passport/v1",
+  "name": "code-reviewer",
+  "certified": false,
+  "stamp": "Not certified",
+  "failures": 3,
+  "generatedAt": "2026-07-29T06:15:46.098Z",
+  "headSha": "a5be86e",
+  "manifestSha": "7c8a47f0e403db1a5806e4b42295aef46f62cb60151db995e5fbff3b873afb10",
+  "checks": [
+    {
+      "id": "compiles",
+      "title": "Compiles; portrait verified from build",
+      "required": true,
+      "status": "pass",
+      "detail": "eve build succeeded and produced a compiled manifest."
+    },
+    {
+      "id": "consent-mirrors-gates",
+      "title": "consent.json mirrors approval gates (no drift)",
+      "required": true,
+      "status": "pass",
+      "detail": "Every source-declared approval gate is recorded in consent.json."
+    },
+    {
+      "id": "policy-present",
+      "title": "policy.json with failOn + blast-radius rules",
+      "required": true,
+      "status": "fail",
+      "detail": "No .aletheia/policy.json found."
+    },
+    {
+      "id": "ci-diff-green",
+      "title": "aletheia diff green against a committed baseline",
+      "required": true,
+      "status": "fail",
+      "detail": "No committed baseline (agent/.aletheia/deployed-capabilities.json) to diff against."
+    },
+    {
+      "id": "restrictions-visible",
+      "title": "Intentional restrictions visible as \"cannots\"",
+      "required": true,
+      "status": "fail",
+      "detail": "No disabled framework tools. A certified agent states what it deliberately cannot do (e.g. bash, write_file)."
+    },
+    {
+      "id": "lifecycle-documented",
+      "title": "Before / While / After lifecycle documented",
+      "required": false,
+      "status": "advisory-pass",
+      "detail": "UX.md documents the before / while / after lifecycle."
+    }
+  ]
+}
+

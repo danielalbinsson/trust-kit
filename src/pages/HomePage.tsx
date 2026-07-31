@@ -2,6 +2,7 @@ import { ArrowRight, Eye, SealCheck, ShieldCheck } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import { site } from "../data/site";
 import { LINKS } from "../lib/links";
+import { galleryAgents } from "../data/gallery";
 
 const layers = [
   {
@@ -125,31 +126,17 @@ export function HomePage() {
           </Link>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {[
-            {
-              name: "design-qa-agent",
-              img: "/gallery/portrait-design-qa-agent.jpg",
-              blurb: "Orchestrator with specialist subagents and GitHub reach.",
-              href: LINKS.designQaBundled,
-            },
-            {
-              name: "support-bot",
-              img: "/gallery/portrait-support-bot.jpg",
-              blurb:
-                "Customer support with refunds that ask first: the trust case in one screen.",
-              href: LINKS.supportBot,
-            },
-          ].map((agent) => (
-            <a key={agent.name} href={agent.href} className="panel-link group overflow-hidden">
-              <img
-                src={agent.img}
-                alt={`${agent.name} Aletheia portrait`}
-                className="aspect-[16/10] w-full object-cover object-top transition-transform duration-[var(--duration-slow)] group-hover:scale-[1.02]"
-                style={{ transitionTimingFunction: "var(--ease-smooth)" }}
-              />
+          {galleryAgents.slice(0, 2).map((agent) => (
+            <a key={agent.name} href={agent.repo} className="panel-link group overflow-hidden">
+              <pre
+                aria-hidden="true"
+                className="aspect-[16/10] w-full overflow-hidden bg-ink/[0.03] px-4 pt-4 text-[6px] leading-[1.05] text-ink/70 md:text-[8px]"
+              >
+                {agent.portrait.bust.join("\n")}
+              </pre>
               <div className="p-6">
                 <h3 className="text-xl tracking-tight">{agent.name}</h3>
-                <p className="mt-2 text-sm text-muted">{agent.blurb}</p>
+                <p className="mt-2 text-sm text-muted">{agent.body}</p>
                 <p className="text-link mt-4 text-sm">View repo →</p>
               </div>
             </a>

@@ -1,0 +1,58 @@
+{
+  "schema": "aletheia.portrait/v1",
+  "name": "aletheia",
+  "verified": true,
+  "provenance": "verified from build — except “asks first”, which is source-declared (eve does not serialize approval)",
+  "generatedAt": "2026-07-30T15:55:10.481Z",
+  "headSha": "0f01fef",
+  "manifestSha": "8c971e86b3b4b50e2b5d8999b2090024509f0800cfacd1a4fade9183d098472e",
+  "bust": [
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                  ·   ··   ·                  ",
+    "                  :▒▒▒▒▒▒▒▒:                  ",
+    "                 :▒▒─▒▒▒▒─▒▒:                 ",
+    "                :▒▒▓─▒▓▓▒─▓▒▒:                ",
+    "                ─▒▒─▓▒▒▒▒▓─▒▒─                ",
+    "                ::▒▒▒▓▒▒▓▒▒▒::                ",
+    "                · :─▒▒::▒▒─: ·                ",
+    "                  ··::::::··                  ",
+    "               ·     ─  ─     ·               ",
+    "                   ········                   ",
+    "                ··:·:·::·:·:··                ",
+    "              ··:··:·:··:·:··:··              ",
+    "             ·:···:·::::::·:···:·             ",
+    "            ····▒::::::::::::▒····            ",
+    "           ··:::▒▒▒::▒::▒::▒▒▒:::··           ",
+    "           ···::::▒::▒::▒::▒::::···           ",
+    "           ·:·:::▒:▒▒:▒▒:▒▒:▒:::·:·           ",
+    "           ··:::::::▒▒▒▒▒▒:::::::··           ",
+    "          :··::▒:▒▒▒▒▒▒▒▒▒▒▒▒:▒::··:          ",
+    "           ::::▒▒▒▒:▒:▒▒:▒:▒▒▒▒::::           ",
+    "           ::·:::▒▒▒▒▒::▒▒▒▒▒:::·::           "
+  ],
+  "canDo": [],
+  "canTouch": [
+    "github"
+  ],
+  "doesOnItsOwn": [],
+  "cannot": [
+    {
+      "tool": "bash",
+      "label": "run shell commands"
+    },
+    {
+      "tool": "write_file",
+      "label": "write files"
+    }
+  ],
+  "subagents": [
+    "A11y auditor",
+    "Design system checker",
+    "Heuristic critic"
+  ]
+}
+

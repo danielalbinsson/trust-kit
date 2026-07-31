@@ -1,0 +1,81 @@
+{
+  "schema": "aletheia.portrait/v1",
+  "name": "support-bot",
+  "verified": true,
+  "provenance": "verified from build — except “asks first”, which is source-declared (eve does not serialize approval)",
+  "generatedAt": "2026-07-30T15:55:10.517Z",
+  "headSha": "a5be86e",
+  "manifestSha": "bf0f2153d803fe5d46f7b2a21d2b5f854c7c1f27284f006afc37fe22b3b1bb05",
+  "bust": [
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                  ·:◦▒▒▒▒◦:·                  ",
+    "                 ·▒▒◦▒▒▒▒◦▒▒·                 ",
+    "                 ▒◦▒▒▒▒▒▒▒▒◦▒                 ",
+    "                 ▒:▒▒▒▒▒▒▒▒:▒                 ",
+    "                ·◦·▒▒▒▒▒▒▒▒·◦·                ",
+    "                ·◦···◦::◦···◦·                ",
+    "                  ·  :  :  ·                  ",
+    "                                              ",
+    "                    ······                    ",
+    "                ·  ::····::  ·                ",
+    "               ·:·:··::::··:·:·               ",
+    "             ···:::::·::·:::::···             ",
+    "            ·····▒·::▒▒▒▒::·▒·····            ",
+    "            ··:·::▒▒::▒▒::▒▒::·:··            ",
+    "           ····:·▒:::▒::▒:::▒·:····           ",
+    "           :·::::▒▒▒▒▒▒▒▒▒▒▒▒::::·:           ",
+    "          ··:·::::::▒▒▒▒▒▒::::::·:··          ",
+    "           ::▒::▒▒▒▒▒::::▒▒▒▒▒::▒::           ",
+    "          ···:▒::▒:▒▒▒▒▒▒▒▒:▒::▒:···          ",
+    "         ··:::::▒:▒::▒::▒::▒:▒:::::··         "
+  ],
+  "canDo": [
+    {
+      "label": "Escalate to human",
+      "asksFirst": true
+    },
+    {
+      "label": "Lookup customer",
+      "asksFirst": false
+    },
+    {
+      "label": "Lookup order",
+      "asksFirst": false
+    },
+    {
+      "label": "Request refund",
+      "asksFirst": true
+    },
+    {
+      "label": "Refund policy",
+      "asksFirst": false
+    },
+    {
+      "label": "Return procedure",
+      "asksFirst": false
+    },
+    {
+      "label": "Shipping faq",
+      "asksFirst": false
+    }
+  ],
+  "canTouch": [],
+  "doesOnItsOwn": [],
+  "cannot": [
+    {
+      "tool": "bash",
+      "label": "run shell commands"
+    },
+    {
+      "tool": "write_file",
+      "label": "write files"
+    }
+  ],
+  "subagents": []
+}
+

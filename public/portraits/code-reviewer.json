@@ -1,0 +1,56 @@
+{
+  "schema": "aletheia.portrait/v1",
+  "name": "code-reviewer",
+  "verified": true,
+  "provenance": "verified from build — except “asks first”, which is source-declared (eve does not serialize approval)",
+  "generatedAt": "2026-07-30T15:55:10.564Z",
+  "headSha": "a5be86e",
+  "manifestSha": "7c8a47f0e403db1a5806e4b42295aef46f62cb60151db995e5fbff3b873afb10",
+  "bust": [
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                                              ",
+    "                  ::∴▒▒▒▒∴::                  ",
+    "                 ·:▒▒▒▓▓▒▒▒:·                 ",
+    "                ::▒▒▓▒▒▒▒▓▒▒::                ",
+    "                ::▒▒▒▓▓▓▓▒▒▒::                ",
+    "                ··:▒▒▒▒▒▒▒▒:··                ",
+    "                 ··:▒:▒▒:▒:··                 ",
+    "                   ∴ ···· ∴                   ",
+    "                                              ",
+    "                   ········                   ",
+    "                ···:······:···                ",
+    "              ···::::·::·::::···              ",
+    "             ··::·::::::::::·::··             ",
+    "            ····:::▒::::::▒:::····            ",
+    "           ··:::::::▒::::▒:::::::··           ",
+    "           ··:::▒:▒▒:▒▒▒▒:▒▒:▒:::··           ",
+    "           ·:::::▒▒:▒▒::▒▒:▒▒:::::·           ",
+    "          ··:::▒:▒▒:▒▒▒▒▒▒:▒▒:▒:::··          ",
+    "         ·:::·:▒▒▒▒▒▒▒::▒▒▒▒▒▒▒:·:::·         ",
+    "          ··:·:::::::▒▒▒▒:::::::·:··          ",
+    "          ·:::▒▒::▒:▒:▒▒:▒:▒::▒▒:::·          "
+  ],
+  "canDo": [
+    {
+      "label": "Mock git diff",
+      "asksFirst": false
+    },
+    {
+      "label": "Submit review",
+      "asksFirst": true
+    },
+    {
+      "label": "Security checklist",
+      "asksFirst": false
+    }
+  ],
+  "canTouch": [],
+  "doesOnItsOwn": [],
+  "cannot": [],
+  "subagents": []
+}
+

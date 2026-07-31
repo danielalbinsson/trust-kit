@@ -1,0 +1,55 @@
+{
+  "schema": "aletheia.passport/v1",
+  "name": "support-bot",
+  "certified": true,
+  "stamp": "Kit Certified",
+  "failures": 0,
+  "generatedAt": "2026-07-29T06:30:51.128Z",
+  "headSha": "a5be86e",
+  "manifestSha": "bf0f2153d803fe5d46f7b2a21d2b5f854c7c1f27284f006afc37fe22b3b1bb05",
+  "checks": [
+    {
+      "id": "compiles",
+      "title": "Compiles; portrait verified from build",
+      "required": true,
+      "status": "pass",
+      "detail": "eve build succeeded and produced a compiled manifest."
+    },
+    {
+      "id": "consent-mirrors-gates",
+      "title": "consent.json mirrors approval gates (no drift)",
+      "required": true,
+      "status": "pass",
+      "detail": "Every source-declared approval gate is recorded in consent.json."
+    },
+    {
+      "id": "policy-present",
+      "title": "policy.json with failOn + blast-radius rules",
+      "required": true,
+      "status": "pass",
+      "detail": "policy.json sets a failOn threshold and/or blast-radius rules."
+    },
+    {
+      "id": "ci-diff-green",
+      "title": "aletheia diff green against a committed baseline",
+      "required": true,
+      "status": "pass",
+      "detail": "A committed baseline exists and the current build introduces no unacknowledged authority expansion."
+    },
+    {
+      "id": "restrictions-visible",
+      "title": "Intentional restrictions visible as \"cannots\"",
+      "required": true,
+      "status": "pass",
+      "detail": "2 framework tool(s) explicitly disabled and shown as cannots."
+    },
+    {
+      "id": "lifecycle-documented",
+      "title": "Before / While / After lifecycle documented",
+      "required": false,
+      "status": "advisory-pass",
+      "detail": "UX.md documents the before / while / after lifecycle."
+    }
+  ]
+}
+
