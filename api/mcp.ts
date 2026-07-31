@@ -1,164 +1,52 @@
 import { createMcpHandler } from "mcp-handler";
-import { z } from "zod";
 import { registerKitPrompts } from "./lib/mcpPrompts.js";
 import { registerKitResources } from "./lib/mcpResources.js";
-import {
-  DOC_ID_RE,
-  PACK_ID_RE,
-  listDocIds,
-  listPolicyPackIds,
-  readDocSpec,
-  readFullLibrary,
-  readPolicyPack,
-} from "./lib/kitFiles.js";
+import { registerKitTools } from "./lib/mcpTools.js";
+import { site } from "../src/data/site.js";
+
+const SERVER_INSTRUCTIONS = [
+  "Agentic Kit is the Eve trust shell: inspect (Aletheia portraits), gate (aletheia-cli authority diff), stamp (Kit Certified).",
+  "Prefer MCP resources over tools when attaching context: agentic-kit://docs/{id}, agentic-kit://policy-packs/{id}, agentic-kit://library/full.",
+  "Tool tree: docs.list → docs.get; packs.list → packs.get; library.get for the full corpus.",
+  "Honesty contract: never invent verified approvals, connection scopes, or runtime behavior. Use the inspect-eve-agent prompt for Aletheia workflows.",
+  `Homepage: ${site.siteUrl} · Docs: ${site.siteUrl}/docs/mcp · Aletheia skill: ${site.aletheiaSkillInstall}`,
+].join("\n");
 
 const mcpHandler = createMcpHandler(
   (server) => {
     registerKitResources(server);
     registerKitPrompts(server);
-
-    server.tool(
-      "list_docs",
-      "List all available Agentic Kit doc ids. Prefer resources/list for MCP-native discovery.",
-      {},
-      async () => {
-        try {
-          const ids = listDocIds();
-          return {
-            content: [
-              {
-                type: "text",
-                text: `Available docs (${ids.length}): ${ids.join(", ")}`,
-              },
-            ],
-          };
-        } catch {
-          return {
-            content: [
-              {
-                type: "text",
-                text: "Failed to scan public/llms/docs. Run pnpm generate:llms before starting the MCP server.",
-              },
-            ],
-            isError: true,
-          };
-        }
-      },
-    );
-
-    server.tool(
-      "get_doc",
-      "Retrieve the full Agentic Kit doc specification for a given id. Prefer resource agentic-kit://docs/{id}.",
-      {
-        id: z
-          .string()
-          .regex(DOC_ID_RE)
-          .describe("Doc id slug, e.g. 'honesty-contract' or 'kit-certified'"),
-      },
-      async ({ id }) => {
-        try {
-          return {
-            content: [{ type: "text", text: readDocSpec(id) }],
-          };
-        } catch {
-          return {
-            content: [
-              {
-                type: "text",
-                text: `Doc '${id}' not found. Run list_docs first.`,
-              },
-            ],
-            isError: true,
-          };
-        }
-      },
-    );
-
-    server.tool(
-      "list_policy_packs",
-      "List published policy pack ids. Prefer resources/list for MCP-native discovery.",
-      {},
-      async () => {
-        try {
-          const ids = listPolicyPackIds();
-          return {
-            content: [
-              {
-                type: "text",
-                text: `Available policy packs (${ids.length}): ${ids.join(", ")}`,
-              },
-            ],
-          };
-        } catch {
-          return {
-            content: [
-              {
-                type: "text",
-                text: "Failed to scan public/policy-packs.",
-              },
-            ],
-            isError: true,
-          };
-        }
-      },
-    );
-
-    server.tool(
-      "get_policy_pack",
-      "Retrieve one policy pack JSON. Prefer resource agentic-kit://policy-packs/{id}.",
-      {
-        id: z
-          .string()
-          .regex(PACK_ID_RE)
-          .describe("Policy pack id, e.g. 'support-bot'"),
-      },
-      async ({ id }) => {
-        try {
-          return {
-            content: [{ type: "text", text: readPolicyPack(id) }],
-          };
-        } catch {
-          return {
-            content: [
-              {
-                type: "text",
-                text: `Policy pack '${id}' not found. Run list_policy_packs first.`,
-              },
-            ],
-            isError: true,
-          };
-        }
-      },
-    );
-
-    server.tool(
-      "get_full_library",
-      "Retrieve the complete Agentic Kit corpus (llms-full.txt). Prefer resource agentic-kit://library/full.",
-      {},
-      async () => {
-        try {
-          return {
-            content: [{ type: "text", text: readFullLibrary() }],
-          };
-        } catch {
-          return {
-            content: [
-              {
-                type: "text",
-                text: "Failed to read public/llms-full.txt. Run pnpm generate:llms before starting the MCP server.",
-              },
-            ],
-            isError: true,
-          };
-        }
-      },
-    );
+    registerKitTools(server);
   },
   {
+    // mcp-handler types serverInfo as {name,version}; runtime accepts full Implementation.
     serverInfo: {
       name: "agentic-kit",
-      version: "0.1.0",
+      version: "0.2.0",
+      title: site.productName,
+      description: site.metaDescription,
+      websiteUrl: site.siteUrl,
+      icons: [
+        {
+          src: `${site.siteUrl}/favicon-32x32.png`,
+          mimeType: "image/png",
+          sizes: ["32x32"],
+        },
+        {
+          src: `${site.siteUrl}/og-image.png`,
+          mimeType: "image/png",
+          sizes: ["1200x630"],
+        },
+      ],
+    } as {
+      name: string;
+      version: string;
+      title: string;
+      description: string;
+      websiteUrl: string;
+      icons: { src: string; mimeType: string; sizes: string[] }[];
     },
+    instructions: SERVER_INSTRUCTIONS,
   },
   {
     basePath: "/api",

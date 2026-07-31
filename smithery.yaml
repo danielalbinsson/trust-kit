@@ -1,0 +1,53 @@
+# Smithery project config — https://smithery.ai/docs/build/project-config
+# Cosmetic fields (description/icon) also editable in the Smithery dashboard.
+
+name: agentic-kit
+displayName: Agentic Kit
+description: >-
+  Supervised delegation for Eve builders: Agentic UX lifecycle patterns enforced
+  with Aletheia capability portraits, authority-diff CI, Kit Certified stamps,
+  and blast-radius policy packs. Read-only docs MCP — no API keys.
+homepage: https://agentic-kit.dev
+documentation: https://agentic-kit.dev/docs/mcp
+icon: https://agentic-kit.dev/favicon-32x32.png
+repository: https://github.com/danielalbinsson/trust-kit
+
+runtime: remote
+
+remote:
+  transport: streamable-http
+  url: https://agentic-kit.dev/api/mcp
+
+startCommand:
+  type: streamableHttp
+  url: https://agentic-kit.dev/api/mcp
+  configSchema:
+    type: object
+    properties: {}
+    additionalProperties: false
+  exampleConfig: {}
+
+categories:
+  - developer-tools
+  - ai-agents
+  - security
+
+keywords:
+  - mcp
+  - eve
+  - vercel-eve
+  - agent-trust
+  - aletheia
+  - agentic-ux
+  - capability-review
+  - kit-certified
+
+features:
+  tools: true
+  resources: true
+  prompts: true
+
+maintainer:
+  name: Daniel Albinsson
+  url: https://danielalbinsson.com
+  email: daniel.Albinsson@pm.me

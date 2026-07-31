@@ -50,7 +50,7 @@
         ],
         "parameters": [
           "resources: agentic-kit://library/full, agentic-kit://docs/{id}, agentic-kit://policy-packs/{id}",
-          "tools: list_docs, get_doc, list_policy_packs, get_policy_pack, get_full_library",
+          "tools: docs.list, docs.get, packs.list, packs.get, library.get",
           "prompt: inspect-eve-agent"
         ]
       }

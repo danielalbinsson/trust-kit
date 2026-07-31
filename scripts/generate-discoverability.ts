@@ -106,6 +106,13 @@ function formatAiTxt(): string {
   ].join("\n");
 }
 
+const READONLY_ANNOTATIONS = {
+  readOnlyHint: true,
+  destructiveHint: false,
+  idempotentHint: true,
+  openWorldHint: false,
+} as const;
+
 function formatMcpServerCard(): string {
   const docIds = docs.map((d) => d.id);
   const packIds = POLICY_PACKS.map((p) => p.id);
@@ -117,11 +124,23 @@ function formatMcpServerCard(): string {
       protocolVersion: "2025-03-26",
       serverInfo: {
         name: "agentic-kit",
-        version: "0.1.0",
-        description:
-          "Agentic Kit docs, policy packs, and pointers to Aletheia for Eve agent trust.",
+        version: "0.2.0",
+        title: site.productName,
+        description: site.metaDescription,
         homepage: abs("/"),
         documentationUrl: abs("/docs/mcp"),
+        icons: [
+          {
+            src: abs("/favicon-32x32.png"),
+            mimeType: "image/png",
+            sizes: ["32x32"],
+          },
+          {
+            src: abs("/og-image.png"),
+            mimeType: "image/png",
+            sizes: ["1200x630"],
+          },
+        ],
       },
       transport: {
         type: "streamable-http",
@@ -141,64 +160,170 @@ function formatMcpServerCard(): string {
       },
       tools: [
         {
-          name: "list_docs",
+          name: "docs.list",
+          title: "List docs",
           description:
-            "List Agentic Kit doc ids. Prefer resources/list for MCP-native discovery.",
+            "List every Agentic Kit doc id (honesty contract, CLI, CI, Kit Certified, and more). Prefer resources/list and agentic-kit://docs/{id} when attaching context; call docs.get only when you need the body as a tool result.",
+          annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
             properties: {},
             additionalProperties: false,
           },
+          outputSchema: {
+            type: "object",
+            properties: {
+              count: { type: "integer", description: "Number of ids returned" },
+              ids: {
+                type: "array",
+                items: { type: "string" },
+                description: "Sorted id slugs",
+              },
+              preferredResourceHint: {
+                type: "string",
+                description:
+                  "MCP resource URI pattern to prefer over tools when attaching context",
+              },
+            },
+            required: ["count", "ids", "preferredResourceHint"],
+            additionalProperties: false,
+          },
         },
         {
-          name: "get_doc",
+          name: "docs.get",
+          title: "Get doc",
           description:
-            "Retrieve one Agentic Kit doc spec. Prefer resource agentic-kit://docs/{id}.",
+            "Fetch one Agentic Kit doc body by id (markdown/plain text). Prefer resource agentic-kit://docs/{id} when your client can attach resources; use this tool when you need the text in the tool channel.",
+          annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
             properties: {
               id: {
                 type: "string",
-                description: "Doc id slug",
+                description:
+                  "Doc id slug from docs.list. Examples: 'honesty-contract', 'kit-certified', 'cli', 'ci'.",
                 enum: docIds,
               },
             },
             required: ["id"],
             additionalProperties: false,
           },
+          outputSchema: {
+            type: "object",
+            properties: {
+              id: { type: "string", description: "Doc id slug" },
+              title: { type: "string", description: "Human title for the doc" },
+              uri: {
+                type: "string",
+                description: "Canonical MCP resource URI for this doc",
+              },
+              text: {
+                type: "string",
+                description: "Full markdown/plain-text doc body",
+              },
+            },
+            required: ["id", "title", "uri", "text"],
+            additionalProperties: false,
+          },
         },
         {
-          name: "list_policy_packs",
-          description: "List published policy pack ids.",
+          name: "packs.list",
+          title: "List policy packs",
+          description:
+            "List published blast-radius policy pack ids for Eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
+          annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
             properties: {},
             additionalProperties: false,
           },
+          outputSchema: {
+            type: "object",
+            properties: {
+              count: { type: "integer", description: "Number of ids returned" },
+              ids: {
+                type: "array",
+                items: { type: "string" },
+                description: "Sorted id slugs",
+              },
+              preferredResourceHint: {
+                type: "string",
+                description:
+                  "MCP resource URI pattern to prefer over tools when attaching context",
+              },
+            },
+            required: ["count", "ids", "preferredResourceHint"],
+            additionalProperties: false,
+          },
         },
         {
-          name: "get_policy_pack",
+          name: "packs.get",
+          title: "Get policy pack",
           description:
-            "Retrieve one policy pack JSON. Prefer resource agentic-kit://policy-packs/{id}.",
+            "Fetch one policy pack JSON by id (blast-radius thresholds per domain). Prefer resource agentic-kit://policy-packs/{id} when attaching context.",
+          annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
             properties: {
               id: {
                 type: "string",
+                description:
+                  "Policy pack id from packs.list. Examples: 'support-bot', 'payments-high', 'design-tools'.",
                 enum: packIds,
               },
             },
             required: ["id"],
             additionalProperties: false,
           },
+          outputSchema: {
+            type: "object",
+            properties: {
+              id: { type: "string", description: "Policy pack id" },
+              title: {
+                type: "string",
+                description: "Human title for the pack",
+              },
+              uri: {
+                type: "string",
+                description: "Canonical MCP resource URI for this pack",
+              },
+              json: {
+                type: "string",
+                description: "Policy pack JSON as a string",
+              },
+            },
+            required: ["id", "title", "uri", "json"],
+            additionalProperties: false,
+          },
         },
         {
-          name: "get_full_library",
+          name: "library.get",
+          title: "Get full library",
           description:
-            "Retrieve llms-full.txt. Prefer resource agentic-kit://library/full.",
+            "Fetch the complete Agentic Kit corpus (llms-full.txt) in one call. Prefer resource agentic-kit://library/full when attaching context; use this tool only when the client lacks resource support.",
+          annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
             properties: {},
+            additionalProperties: false,
+          },
+          outputSchema: {
+            type: "object",
+            properties: {
+              uri: {
+                type: "string",
+                description: "Canonical MCP resource URI for the full corpus",
+              },
+              text: {
+                type: "string",
+                description: "Complete llms-full.txt corpus",
+              },
+              byteLength: {
+                type: "integer",
+                description: "UTF-8 byte length of the corpus text",
+              },
+            },
+            required: ["uri", "text", "byteLength"],
             additionalProperties: false,
           },
         },
@@ -367,7 +492,7 @@ function formatWellKnownAi(): string {
             methods: ["POST"],
             parameters: [
               "resources: agentic-kit://library/full, agentic-kit://docs/{id}, agentic-kit://policy-packs/{id}",
-              "tools: list_docs, get_doc, list_policy_packs, get_policy_pack, get_full_library",
+              "tools: docs.list, docs.get, packs.list, packs.get, library.get",
               "prompt: inspect-eve-agent",
             ],
           },

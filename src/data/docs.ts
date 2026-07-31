@@ -134,7 +134,7 @@ Use MCP **resources** when your client supports them — they map directly to Ki
 
 ## Tools
 
-Legacy list/read helpers (\`list_docs\`, \`get_doc\`, \`list_policy_packs\`, \`get_policy_pack\`, \`get_full_library\`). Prefer resources when browsing or attaching context.
+Tool tree (dot notation): \`docs.list\` / \`docs.get\`, \`packs.list\` / \`packs.get\`, \`library.get\`. Prefer resources when browsing or attaching context.
 
 ## Prompt
 
@@ -246,7 +246,9 @@ Reference implementation: [Aletheia capability-review.yml](https://github.com/da
 4. \`aletheia diff\` green in CI against a committed baseline
 5. Before / While / After lifecycle documented (Agentic UX)
 6. Intentional restrictions (disabled framework tools) visible as "cannots"
-7. One-page passport markdown for stakeholders (hand-authored to match the portrait today; \`aletheia passport\` generation is Phase 2)
+7. One-page passport, **generated** by \`aletheia passport\` from the compiled manifest (not hand-authored) — it embeds the checklist result and a \`certified\` flag
+
+The badge on the [gallery](/gallery) is derived from that generated passport, which is published per agent (e.g. [design-qa-agent.json](/passports/design-qa-agent.json)) so anyone can fetch and check it. Checks 1–5 are required; the lifecycle doc is advisory. An agent is Kit Certified only when every required check passes.
 
 Selling blueprints without the stamp is just another template repo. This checklist is the public definition of **Kit Certified**.
 

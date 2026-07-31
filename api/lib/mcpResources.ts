@@ -22,7 +22,7 @@ export function registerKitResources(server: McpServer): void {
     {
       title: "Full Agentic Kit corpus",
       description:
-        "Complete docs corpus as a single document (llms-full.txt). Prefer this resource over get_full_library when browsing MCP resources.",
+        "Complete docs corpus as a single document (llms-full.txt). Prefer this resource over library.get when browsing MCP resources.",
       mimeType: "text/plain",
     },
     async (uri) => ({
@@ -55,7 +55,7 @@ export function registerKitResources(server: McpServer): void {
     {
       title: "Agentic Kit doc specification",
       description:
-        "Per-doc spec from public/llms/docs/{id}.txt. Prefer resources/read over get_doc when attaching context.",
+        "Per-doc spec from public/llms/docs/{id}.txt. Prefer resources/read over docs.get when attaching context.",
     },
     async (uri, variables) => {
       const fromTemplate = variables.id;
