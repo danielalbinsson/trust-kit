@@ -4,6 +4,16 @@ Public product shell for [agentic-kit.dev](https://agentic-kit.dev) — inspect,
 
 **Engine:** [Aletheia](https://github.com/danielalbinsson/Aletheia) (OSS inspector + `@danielalbinsson/aletheia-cli`)
 
+### Stack
+
+| Surface | Job |
+|---------|-----|
+| [Agentic UX](https://agentic-ux.com) | Lifecycle patterns (Before / While / After) + [hire](https://agentic-ux.com/hire) |
+| **This site** | Inspect · Gate · Stamp + [Capability Review](https://agentic-kit.dev/review) |
+| [Aletheia](https://github.com/danielalbinsson/Aletheia) | Portraits + `npx @danielalbinsson/aletheia-cli` |
+| [eve-blueprints](https://github.com/danielalbinsson/eve-blueprints) | Copyable Eve templates with lifecycle docs |
+| [design-qa-agent](https://github.com/danielalbinsson/design-qa-agent) | Flagship Kit Certified runnable showcase |
+
 ## Develop
 
 ```bash
