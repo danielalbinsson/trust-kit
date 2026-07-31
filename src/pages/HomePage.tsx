@@ -1,5 +1,6 @@
 import { ArrowRight, Eye, SealCheck, ShieldCheck } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
+import { PortraitBust } from "../components/PortraitBust";
 import { site } from "../data/site";
 import { LINKS } from "../lib/links";
 import { galleryAgents } from "../data/gallery";
@@ -128,12 +129,7 @@ export function HomePage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {galleryAgents.slice(0, 2).map((agent) => (
             <a key={agent.name} href={agent.repo} className="panel-link group overflow-hidden">
-              <pre
-                aria-hidden="true"
-                className="aspect-[16/10] w-full overflow-hidden bg-ink/[0.03] px-4 pt-4 text-[6px] leading-[1.05] text-ink/70 md:text-[8px]"
-              >
-                {agent.portrait.bust.join("\n")}
-              </pre>
+              <PortraitBust portrait={agent.portrait} compact />
               <div className="p-6">
                 <h3 className="text-xl tracking-tight">{agent.name}</h3>
                 <p className="mt-2 text-sm text-muted">{agent.body}</p>

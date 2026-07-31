@@ -1,3 +1,4 @@
+import { PortraitBust } from "../components/PortraitBust";
 import { LINKS } from "../lib/links";
 import { galleryAgents, type Portrait } from "../data/gallery";
 
@@ -9,21 +10,22 @@ function PortraitView({ portrait }: { portrait: Portrait }) {
   const cannot = portrait.cannot.map((r) => `${r.label} (${r.tool} disabled)`);
 
   return (
-    <div className="bg-ink/[0.03] p-6 md:p-8">
-      <pre
-        aria-hidden="true"
-        className="overflow-hidden text-[7px] leading-[1.05] text-ink/70 md:text-[9px]"
-      >
-        {portrait.bust.join("\n")}
-      </pre>
-      <dl className="mt-4 space-y-3 text-sm">
-        <PortraitFacts label="Can do" items={canDo} />
-        {portrait.canTouch.length ? <PortraitFacts label="Can touch" items={portrait.canTouch} /> : null}
-        {alone.length ? <PortraitFacts label="Does on its own" items={alone} /> : null}
-        {portrait.subagents.length ? <PortraitFacts label="Delegates to" items={portrait.subagents} /> : null}
-        {cannot.length ? <PortraitFacts label="Cannot" items={cannot} /> : null}
-      </dl>
-      <p className="mt-4 text-xs text-ink-soft">{portrait.provenance}</p>
+    <div>
+      <PortraitBust portrait={portrait} />
+      <div className="bg-paper-deep p-6 md:p-8">
+        <dl className="space-y-3 text-sm">
+          <PortraitFacts label="Can do" items={canDo} />
+          {portrait.canTouch.length ? (
+            <PortraitFacts label="Can touch" items={portrait.canTouch} />
+          ) : null}
+          {alone.length ? <PortraitFacts label="Does on its own" items={alone} /> : null}
+          {portrait.subagents.length ? (
+            <PortraitFacts label="Delegates to" items={portrait.subagents} />
+          ) : null}
+          {cannot.length ? <PortraitFacts label="Cannot" items={cannot} /> : null}
+        </dl>
+        <p className="mt-4 text-xs text-ink-soft">{portrait.provenance}</p>
+      </div>
     </div>
   );
 }
