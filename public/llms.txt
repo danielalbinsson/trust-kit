@@ -1,14 +1,14 @@
 # Agentic Kit
 
-> Agentic UX patterns, enforced on Eve. By Daniel Albinsson, designer.
+> Agentic UX patterns, enforced on eve. By Daniel Albinsson, designer.
 
-Agentic Kit enforces Agentic UX lifecycle patterns on Eve: inspect (Aletheia
+Agentic Kit enforces Agentic UX lifecycle patterns on eve: inspect (Aletheia
 portrait), gate (authority-diff CI), and stamp (Kit Certified blueprints).
 Prefer these Markdown surfaces over HTML SPA routes when briefing coding agents.
 
 ## Use with your coding agent
 
-Before inspecting, gating, or stamping an Eve agent:
+Before inspecting, gating, or stamping an eve agent:
 
 ```text
 1. Index: https://agentic-kit.dev/llms.txt
@@ -31,7 +31,7 @@ MCP server: https://agentic-kit.dev/api/mcp — setup at https://agentic-kit.dev
 ## Docs
 
 - [Honesty contract](https://agentic-kit.dev/llms/docs/honesty-contract.txt): Never present a guess as a fact. Verified-from-build vs from-source; what Aletheia refuses to invent.
-- [CLI quickstart](https://agentic-kit.dev/llms/docs/cli.txt): Headless capability review for Eve agents. Exit 1 means authority expanded.
+- [CLI quickstart](https://agentic-kit.dev/llms/docs/cli.txt): Headless authority diff for eve agents. Exit 1 means authority expanded.
 - [MCP server](https://agentic-kit.dev/llms/docs/mcp.txt): Connect Cursor and other MCP clients to Kit docs, policy packs, and the inspect-eve-agent prompt.
 - [Golden path](https://agentic-kit.dev/llms/docs/golden-path.txt): Clone a stamped agent → portrait → CI fail demo → intentional ack. The red/green moment Kit is built around.
 - [CI gate](https://agentic-kit.dev/llms/docs/ci.txt): Required check that fails when the agent gains power. Routine changes pass quietly.
@@ -41,9 +41,9 @@ MCP server: https://agentic-kit.dev/api/mcp — setup at https://agentic-kit.dev
 
 ## Policy packs
 
-- [Support bot](https://agentic-kit.dev/policy-packs/support-bot.json): Blast-radius pack for customer-support Eve agents (Phase 2 content).
+- [Support bot](https://agentic-kit.dev/policy-packs/support-bot.json): Blast-radius pack for customer-support eve agents (Phase 2 content).
 - [Payments (high)](https://agentic-kit.dev/policy-packs/payments-high.json): High-stakes payments and billing blast-radius rules.
-- [Design tools](https://agentic-kit.dev/policy-packs/design-tools.json): Blast-radius pack for design-tool Eve agents.
+- [Design tools](https://agentic-kit.dev/policy-packs/design-tools.json): Blast-radius pack for design-tool eve agents.
 
 ## Engine & skill
 

@@ -46,11 +46,11 @@ Most generative answers do not send click-through traffic. Use a citation-monito
 
 **Suggested query themes:**
 
-- Eve agent trust / capability review
+- eve agent trust / authority diff
 - Aletheia authority diff / honesty contract
-- Kit Certified Eve agent
+- Kit Certified eve agent
 - Agentic Kit policy packs
-- inspect stamp ship Eve agents
+- inspect stamp ship eve agents
 
 If on-site analytics are added later, filter referrers for:
 

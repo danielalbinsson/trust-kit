@@ -6,14 +6,14 @@ export function registerKitPrompts(server: McpServer): void {
   server.registerPrompt(
     "inspect-eve-agent",
     {
-      title: "Inspect Eve agent",
+      title: "Inspect eve agent",
       description:
-        "Inspect an Eve agent with Aletheia honesty rules. Do not invent trust claims.",
+        "Inspect an eve agent with Aletheia honesty rules. Do not invent trust claims.",
       argsSchema: {
         agentPath: z
           .string()
           .min(1)
-          .describe("Path or repo URL of the Eve agent workspace"),
+          .describe("Path or repo URL of the eve agent workspace"),
         goal: z
           .string()
           .optional()
@@ -34,7 +34,7 @@ export function registerKitPrompts(server: McpServer): void {
             content: {
               type: "text",
               text: [
-                "You are helping inspect an Eve agent using Agentic Kit / Aletheia.",
+                "You are helping inspect an eve agent using Agentic Kit / Aletheia.",
                 "",
                 `Agent workspace: ${agentPath}`,
                 goalLine,

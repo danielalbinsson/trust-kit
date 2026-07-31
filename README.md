@@ -1,6 +1,6 @@
-# Agentic Kit (Trust Kit)
+# Agentic Kit
 
-Public product shell for [agentic-kit.dev](https://agentic-kit.dev) — inspect, stamp, and ship Eve agents you can defend.
+Public product shell for [agentic-kit.dev](https://agentic-kit.dev). Inspect · Gate · Stamp for eve (Vercel) agents you can defend.
 
 **Engine:** [Aletheia](https://github.com/danielalbinsson/Aletheia) (OSS inspector + `@danielalbinsson/aletheia-cli`)
 
@@ -8,11 +8,11 @@ Public product shell for [agentic-kit.dev](https://agentic-kit.dev) — inspect,
 
 | Surface | Job |
 |---------|-----|
-| [Agentic UX](https://agentic-ux.com) | Lifecycle patterns (Before / While / After) + [hire](https://agentic-ux.com/hire) |
-| **This site** | Inspect · Gate · Stamp + [Capability Review](https://agentic-kit.dev/review) |
-| [Aletheia](https://github.com/danielalbinsson/Aletheia) | Portraits + `npx @danielalbinsson/aletheia-cli` |
-| [eve-blueprints](https://github.com/danielalbinsson/eve-blueprints) | Copyable Eve templates with lifecycle docs |
-| [design-qa-agent](https://github.com/danielalbinsson/design-qa-agent) | Flagship Kit Certified runnable showcase |
+| [Agentic UX](https://agentic-ux.com) | Lifecycle patterns for supervised delegation: Before the agent acts, While the agent works, After the agent acts · [hire](https://agentic-ux.com/hire) |
+| **This site (Agentic Kit)** | Inspect · Gate · Stamp + [Capability Review](https://agentic-kit.dev/review) |
+| [Aletheia](https://github.com/danielalbinsson/Aletheia) | Self-portrait + authority-diff CI · `npx @danielalbinsson/aletheia-cli` |
+| [eve-blueprints](https://github.com/danielalbinsson/eve-blueprints) | Copyable eve templates with lifecycle docs |
+| [design-qa-agent](https://github.com/danielalbinsson/design-qa-agent) | Kit Certified runnable showcase |
 
 ## Develop
 
@@ -40,7 +40,7 @@ Machine-readable guidance at **`/llms.txt`**. Each `/llms/docs/{id}.txt` file is
 ### Use with your coding agent
 
 ```text
-Before inspecting or gating an Eve agent:
+Before inspecting or gating an eve agent:
 
 1. Index: https://agentic-kit.dev/llms.txt
 2. Doc file: https://agentic-kit.dev/llms/docs/{doc-id}.txt

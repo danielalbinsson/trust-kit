@@ -6,7 +6,7 @@
     "name": "agentic-kit",
     "version": "0.2.0",
     "title": "Agentic Kit",
-    "description": "Supervised delegation for Eve builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
+    "description": "Supervised delegation for eve (Vercel) builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
     "homepage": "https://agentic-kit.dev/",
     "documentationUrl": "https://agentic-kit.dev/docs/mcp",
     "icons": [
@@ -149,7 +149,7 @@
     {
       "name": "packs.list",
       "title": "List policy packs",
-      "description": "List published blast-radius policy pack ids for Eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
+      "description": "List published blast-radius policy pack ids for eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,
@@ -311,11 +311,11 @@
   "prompts": [
     {
       "name": "inspect-eve-agent",
-      "description": "Inspect an Eve agent with Aletheia honesty rules. Do not invent trust claims.",
+      "description": "Inspect an eve agent with Aletheia honesty rules. Do not invent trust claims.",
       "arguments": [
         {
           "name": "agentPath",
-          "description": "Path or repo URL of the Eve agent workspace",
+          "description": "Path or repo URL of the eve agent workspace",
           "required": true
         },
         {

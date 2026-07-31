@@ -12,9 +12,9 @@ A Kit Certified agent is not "looks nice." It meets this public checklist:
 2. `agent/.aletheia/consent.json` mirrors approval gates (no drift)
 3. `.aletheia/policy.json` with sensible `failOn` + blast-radius rules
 4. `aletheia diff` green in CI against a committed baseline
-5. Before / While / After lifecycle documented (Agentic UX)
+5. Before the agent acts / While the agent works / After the agent acts lifecycle documented (Agentic UX)
 6. Intentional restrictions (disabled framework tools) visible as "cannots"
-7. One-page passport, **generated** by `aletheia passport` from the compiled manifest (not hand-authored) — it embeds the checklist result and a `certified` flag
+7. One-page passport, **generated** by `aletheia passport` from the compiled manifest (not hand-authored). It embeds the checklist result and a `certified` flag
 
 The badge on the [gallery](/gallery) is derived from that generated passport, which is published per agent (e.g. [design-qa-agent.json](/passports/design-qa-agent.json)) so anyone can fetch and check it. Checks 1–5 are required; the lifecycle doc is advisory. An agent is Kit Certified only when every required check passes.
 

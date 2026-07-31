@@ -25,7 +25,7 @@ Without a manifest (common on a fresh clone), Aletheia falls back to a tolerant 
 ## What Aletheia refuses to invent
 
 - Per-tool **approval** as build-verified (use `agent/.aletheia/consent.json`; always source-declared)
-- Connection read/write scope when Eve does not expose it
+- Connection read/write scope when eve does not expose it
 
 Drift between source `approval:` gates and the consent sidecar is reported as **drift**, not shown as fact.
 

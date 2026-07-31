@@ -1,6 +1,6 @@
 {
   "name": "design-tools",
-  "description": "Pack for design-QA / Figma-adjacent Eve agents (Phase 2 content).",
+  "description": "Pack for design-QA / Figma-adjacent eve agents (Phase 2 content).",
   "failOn": "elevated",
   "rules": [
     { "category": "source control", "severity": "high", "pattern": "github|gitlab" },

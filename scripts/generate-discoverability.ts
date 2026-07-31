@@ -230,7 +230,7 @@ function formatMcpServerCard(): string {
           name: "packs.list",
           title: "List policy packs",
           description:
-            "List published blast-radius policy pack ids for Eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
+            "List published blast-radius policy pack ids for eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
           annotations: READONLY_ANNOTATIONS,
           inputSchema: {
             type: "object",
@@ -355,11 +355,11 @@ function formatMcpServerCard(): string {
         {
           name: "inspect-eve-agent",
           description:
-            "Inspect an Eve agent with Aletheia honesty rules. Do not invent trust claims.",
+            "Inspect an eve agent with Aletheia honesty rules. Do not invent trust claims.",
           arguments: [
             {
               name: "agentPath",
-              description: "Path or repo URL of the Eve agent workspace",
+              description: "Path or repo URL of the eve agent workspace",
               required: true,
             },
             {
@@ -462,7 +462,7 @@ function formatWellKnownAi(): string {
             id: "docs-index",
             name: "Agentic Kit Docs Index",
             description:
-              "Machine-readable docs for Eve agent trust: honesty contract, CLI, CI, Kit Certified",
+              "Machine-readable docs for eve agent trust: honesty contract, CLI, CI, Kit Certified",
             endpoint: abs("/llms.txt"),
             methods: ["GET"],
             parameters: [],
@@ -478,7 +478,7 @@ function formatWellKnownAi(): string {
           {
             id: "policy-packs",
             name: "Policy Packs",
-            description: "Blast-radius policy.json packs for Eve agents",
+            description: "Blast-radius policy.json packs for eve agents",
             endpoint: `${abs("/policy-packs")}/{pack-id}.json`,
             methods: ["GET"],
             parameters: [`pack-id: string, required : one of: ${packIds}`],
@@ -487,7 +487,7 @@ function formatWellKnownAi(): string {
             id: "mcp-agentic-kit",
             name: "Agentic Kit MCP",
             description:
-              "MCP resources and tools for docs, policy packs, and Eve inspect prompt",
+              "MCP resources and tools for docs, policy packs, and eve inspect prompt",
             endpoint: site.mcpServerUrl,
             methods: ["POST"],
             parameters: [

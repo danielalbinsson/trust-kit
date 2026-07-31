@@ -1,4 +1,4 @@
-/** Canonical site metadata for Agentic Kit (trust kit shell). */
+/** Canonical site metadata for Agentic Kit. */
 
 export const site = {
   siteUrl: "https://agentic-kit.dev",
@@ -6,20 +6,20 @@ export const site = {
   siteTitle: "Agentic Kit",
   siteShortName: "Kit",
   productName: "Agentic Kit",
-  siteTagline: "Agentic UX patterns, enforced on Eve.",
-  metaTitleSuffix: "Supervised delegation on Eve",
+  siteTagline: "Agentic UX patterns, enforced on eve.",
+  metaTitleSuffix: "Supervised delegation on eve",
   metaDescription:
-    "Supervised delegation for Eve builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
-  heroHeadline: "See what an Eve agent can do before you run it.",
+    "Supervised delegation for eve (Vercel) builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
+  heroHeadline: "See what an eve agent can do before you run it.",
   heroLead:
     "Agents act on your behalf. The design job is making that reach legible to your team before merge.",
   heroSubline:
-    "Patterns from Agentic UX, enforced with Aletheia portraits, authority-diff CI, and Kit Certified blueprints.",
+    "Patterns from Agentic UX, enforced with Aletheia portraits, authority-diff CI, and Kit Certified blueprints. Agentic Kit is the product shell; Aletheia is the inspector.",
   authorByline: "Daniel Albinsson · Designer · author of Agentic UX",
   homeLayersEyebrow: "Design to enforcement",
   footerBlurb:
-    "Open tooling for Eve teams who need legibility before merge. Patterns from Agentic UX, enforced with Aletheia.",
-  docsIndexHeadline: "How supervised delegation shows up on Eve.",
+    "Open tooling for eve teams who need legibility before merge. Patterns from Agentic UX, enforced with Aletheia.",
+  docsIndexHeadline: "How supervised delegation shows up on eve.",
   docsIndexLead:
     "Design commitments and enforcement: honesty contract, lifecycle docs, CLI, CI gate, and the golden path from clone to red/green.",
   authorName: "Daniel Albinsson",
@@ -57,14 +57,14 @@ export const site = {
   ogImagePath: "/og-image.png",
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Agentic Kit — supervised delegation for Eve agents",
+  ogImageAlt: "Agentic Kit: supervised delegation for eve agents",
   twitterCard: "summary_large_image" as const,
   galleryMetaDescription:
-    "Stamped Eve agent blueprints that pass Aletheia inspection and the Kit Certified checklist.",
+    "Stamped eve agent blueprints that pass Aletheia inspection and the Kit Certified checklist.",
   reviewMetaDescription:
     "Fixed-scope Capability Review: capability one-pager for stakeholders, Kit Certified gap list for your team.",
   docsIndexMetaDescription:
-    "Supervised delegation on Eve: honesty contract, lifecycle docs, CLI, CI gate, Kit Certified, and the golden path.",
+    "Supervised delegation on eve: honesty contract, lifecycle docs, CLI, CI gate, Kit Certified, and the golden path.",
 } as const;
 
 export const SITE_TITLE = site.siteTitle;
@@ -74,7 +74,7 @@ export const POLICY_PACKS = [
     id: "support-bot",
     title: "Support bot",
     description:
-      "Blast-radius pack for customer-support Eve agents (Phase 2 content).",
+      "Blast-radius pack for customer-support eve agents (Phase 2 content).",
     path: "/policy-packs/support-bot.json",
   },
   {
@@ -86,7 +86,7 @@ export const POLICY_PACKS = [
   {
     id: "design-tools",
     title: "Design tools",
-    description: "Blast-radius pack for design-tool Eve agents.",
+    description: "Blast-radius pack for design-tool eve agents.",
     path: "/policy-packs/design-tools.json",
   },
 ] as const;

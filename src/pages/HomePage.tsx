@@ -23,7 +23,7 @@ const layers = [
     step: "03",
     icon: SealCheck,
     title: "Stamp",
-    body: "Kit Certified blueprints ship consent, policy, CI, and Before / While / After lifecycle docs from Agentic UX.",
+    body: "Kit Certified blueprints ship consent, policy, CI, and Agentic UX lifecycle docs (Before the agent acts / While the agent works / After the agent acts).",
   },
 ];
 
@@ -107,7 +107,7 @@ export function HomePage() {
             <div className="bg-paper-deep p-4 md:p-6">
               <img
                 src="/gallery/capability-review-authority-expanded.jpg"
-                alt="Aletheia capability review showing authority expanded"
+                alt="Aletheia authority diff showing authority expanded"
                 className="h-full w-full rounded-[var(--radius-md)] object-cover object-top shadow-[var(--shadow-elevated)]"
               />
             </div>

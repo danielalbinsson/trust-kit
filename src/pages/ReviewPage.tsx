@@ -16,7 +16,7 @@ export function ReviewPage() {
         Capability Review
       </h1>
       <p className="lead fade-up-delay-2 mt-6">
-        I run fixed-scope reviews of Eve agent repos. Stakeholders get a capability
+        I run fixed-scope reviews of eve agent repos. Stakeholders get a capability
         one-pager; you get a Kit Certified gap list to ship against.
       </p>
 
@@ -34,7 +34,7 @@ export function ReviewPage() {
 
           <h2 className="mt-10 text-2xl tracking-tight">Scope & turnaround</h2>
           <p className="mt-4 text-base leading-relaxed text-ink-soft">
-            One Eve agent repo (or monorepo path). Async review in ~3–5 business
+            One eve agent repo (or monorepo path). Async review in ~3–5 business
             days after access. Fixed fee typically{" "}
             <strong className="font-medium">€400–1500</strong> depending on
             connections, subagents, and CI depth.

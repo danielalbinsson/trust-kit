@@ -2,7 +2,7 @@
   "name": "trust-kit",
   "private": true,
   "version": "0.1.0",
-  "description": "Trust kit for Eve builders — inspect, stamp, and ship agents you can defend.",
+  "description": "Agentic Kit for eve (Vercel) builders: inspect, stamp, and ship agents you can defend.",
   "license": "MIT",
   "type": "module",
   "homepage": "https://agentic-kit.dev",

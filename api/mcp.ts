@@ -5,7 +5,7 @@ import { registerKitTools } from "./lib/mcpTools.js";
 import { site } from "../src/data/site.js";
 
 const SERVER_INSTRUCTIONS = [
-  "Agentic Kit is the Eve trust shell: inspect (Aletheia portraits), gate (aletheia-cli authority diff), stamp (Kit Certified).",
+  "Agentic Kit is the product shell for eve (Vercel): inspect (Aletheia portraits), gate (aletheia-cli authority diff), stamp (Kit Certified).",
   "Prefer MCP resources over tools when attaching context: agentic-kit://docs/{id}, agentic-kit://policy-packs/{id}, agentic-kit://library/full.",
   "Tool tree: docs.list → docs.get; packs.list → packs.get; library.get for the full corpus.",
   "Honesty contract: never invent verified approvals, connection scopes, or runtime behavior. Use the inspect-eve-agent prompt for Aletheia workflows.",

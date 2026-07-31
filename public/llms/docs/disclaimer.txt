@@ -6,7 +6,7 @@ Product: Agentic Kit (https://agentic-kit.dev/)
 HTML: https://agentic-kit.dev/docs/disclaimer
 Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
 
-Agentic Kit and Aletheia help you **see** what an Eve agent is configured to do. They are not a security audit, penetration test, compliance certification, or guarantee that an agent is safe to run.
+Agentic Kit and Aletheia help you **see** what an eve agent is configured to do. They are not a security audit, penetration test, compliance certification, or guarantee that an agent is safe to run.
 
 - Secrets can still leak through misconfigured credentials or prompts
 - Runtime behavior can diverge from the static portrait

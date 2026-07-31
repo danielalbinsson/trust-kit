@@ -1,12 +1,12 @@
 # CLI quickstart
 
-> Headless capability review for Eve agents. Exit 1 means authority expanded.
+> Headless authority diff for eve agents. Exit 1 means authority expanded.
 
 Product: Agentic Kit (https://agentic-kit.dev/)
 HTML: https://agentic-kit.dev/docs/cli
 Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
 
-Headless capability review for Eve agents. Exit `1` means authority expanded.
+Headless authority diff for eve agents. Exit `1` means authority expanded.
 
 ## Install & run
 

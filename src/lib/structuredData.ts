@@ -112,7 +112,7 @@ export function docPageJsonLd(id: DocId): Record<string, unknown>[] {
       dateModified: site.datePublished,
       inLanguage: "en",
       keywords: [
-        "Eve agent",
+        "eve agent",
         "supervised delegation",
         "Agentic UX",
         "Aletheia",

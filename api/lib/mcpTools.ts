@@ -148,7 +148,7 @@ export function registerKitTools(server: McpServer): void {
     {
       title: "List policy packs",
       description:
-        "List published blast-radius policy pack ids for Eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
+        "List published blast-radius policy pack ids for eve agents. Prefer resources/list and agentic-kit://policy-packs/{id}; call packs.get when you need the JSON as a tool result.",
       inputSchema: {},
       outputSchema: listIdsOutput,
       annotations: READONLY,

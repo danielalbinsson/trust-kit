@@ -44,7 +44,7 @@ Without a manifest (common on a fresh clone), Aletheia falls back to a tolerant 
 ## What Aletheia refuses to invent
 
 - Per-tool **approval** as build-verified (use \`agent/.aletheia/consent.json\`; always source-declared)
-- Connection read/write scope when Eve does not expose it
+- Connection read/write scope when eve does not expose it
 
 Drift between source \`approval:\` gates and the consent sidecar is reported as **drift**, not shown as fact.`,
   },
@@ -52,8 +52,8 @@ Drift between source \`approval:\` gates and the consent sidecar is reported as 
     id: "cli",
     title: "CLI quickstart",
     summary:
-      "Headless capability review for Eve agents. Exit 1 means authority expanded.",
-    body: `Headless capability review for Eve agents. Exit \`1\` means authority expanded.
+      "Headless authority diff for eve agents. Exit 1 means authority expanded.",
+    body: `Headless authority diff for eve agents. Exit \`1\` means authority expanded.
 
 ## Install & run
 
@@ -94,7 +94,7 @@ npx skills add danielalbinsson/Aletheia --skill aletheia-eve-trust
     title: "MCP server",
     summary:
       "Connect Cursor and other MCP clients to Kit docs, policy packs, and the inspect-eve-agent prompt.",
-    body: `When deployed, Agentic Kit exposes an MCP server over Streamable HTTP. No API keys or config — the server reads public docs and policy packs at runtime.
+    body: `When deployed, Agentic Kit exposes an MCP server over Streamable HTTP. No API keys or config. The server reads public docs and policy packs at runtime.
 
 ## Endpoint
 
@@ -124,7 +124,7 @@ Use the same URL with Streamable HTTP transport. Consult your client's MCP docs 
 
 ## Resources (preferred)
 
-Use MCP **resources** when your client supports them — they map directly to Kit's llms corpus:
+Use MCP **resources** when your client supports them. They map directly to Kit's llms corpus:
 
 | URI | Purpose |
 |-----|---------|
@@ -144,8 +144,8 @@ Pair with the [Aletheia skill](${site.aletheiaSkillUrl}) and [CLI quickstart](/d
 
 ## Also available
 
-- [llms.txt](/llms.txt) — index for agents that do not use MCP
-- [API catalog](/.well-known/api-catalog) — linkset for discovery bots`,
+- [llms.txt](/llms.txt): index for agents that do not use MCP
+- [API catalog](/.well-known/api-catalog): linkset for discovery bots`,
   },
   {
     id: "golden-path",
@@ -244,9 +244,9 @@ Reference implementation: [Aletheia capability-review.yml](https://github.com/da
 2. \`agent/.aletheia/consent.json\` mirrors approval gates (no drift)
 3. \`.aletheia/policy.json\` with sensible \`failOn\` + blast-radius rules
 4. \`aletheia diff\` green in CI against a committed baseline
-5. Before / While / After lifecycle documented (Agentic UX)
+5. Before the agent acts / While the agent works / After the agent acts lifecycle documented (Agentic UX)
 6. Intentional restrictions (disabled framework tools) visible as "cannots"
-7. One-page passport, **generated** by \`aletheia passport\` from the compiled manifest (not hand-authored) — it embeds the checklist result and a \`certified\` flag
+7. One-page passport, **generated** by \`aletheia passport\` from the compiled manifest (not hand-authored). It embeds the checklist result and a \`certified\` flag
 
 The badge on the [gallery](/gallery) is derived from that generated passport, which is published per agent (e.g. [design-qa-agent.json](/passports/design-qa-agent.json)) so anyone can fetch and check it. Checks 1–5 are required; the lifecycle doc is advisory. An agent is Kit Certified only when every required check passes.
 
@@ -260,7 +260,7 @@ Reference stamps: [support-bot](https://github.com/danielalbinsson/eve-blueprint
     eyebrow: "Legal",
     summary:
       "Legibility tooling, not a security audit or compliance certification.",
-    body: `Agentic Kit and Aletheia help you **see** what an Eve agent is configured to do. They are not a security audit, penetration test, compliance certification, or guarantee that an agent is safe to run.
+    body: `Agentic Kit and Aletheia help you **see** what an eve agent is configured to do. They are not a security audit, penetration test, compliance certification, or guarantee that an agent is safe to run.
 
 - Secrets can still leak through misconfigured credentials or prompts
 - Runtime behavior can diverge from the static portrait

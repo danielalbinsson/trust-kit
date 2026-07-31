@@ -2,14 +2,14 @@
   "aiendpoint": {
     "service": {
       "name": "Agentic Kit",
-      "description": "Supervised delegation for Eve builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
+      "description": "Supervised delegation for eve (Vercel) builders: lifecycle design from Agentic UX, portraits and authority-diff CI with Aletheia. Legibility tooling, not a security audit.",
       "provider": "Daniel Albinsson"
     },
     "capabilities": [
       {
         "id": "docs-index",
         "name": "Agentic Kit Docs Index",
-        "description": "Machine-readable docs for Eve agent trust: honesty contract, CLI, CI, Kit Certified",
+        "description": "Machine-readable docs for eve agent trust: honesty contract, CLI, CI, Kit Certified",
         "endpoint": "https://agentic-kit.dev/llms.txt",
         "methods": [
           "GET"
@@ -31,7 +31,7 @@
       {
         "id": "policy-packs",
         "name": "Policy Packs",
-        "description": "Blast-radius policy.json packs for Eve agents",
+        "description": "Blast-radius policy.json packs for eve agents",
         "endpoint": "https://agentic-kit.dev/policy-packs/{pack-id}.json",
         "methods": [
           "GET"
@@ -43,7 +43,7 @@
       {
         "id": "mcp-agentic-kit",
         "name": "Agentic Kit MCP",
-        "description": "MCP resources and tools for docs, policy packs, and Eve inspect prompt",
+        "description": "MCP resources and tools for docs, policy packs, and eve inspect prompt",
         "endpoint": "https://agentic-kit.dev/api/mcp",
         "methods": [
           "POST"

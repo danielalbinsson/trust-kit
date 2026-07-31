@@ -6,7 +6,7 @@ Product: Agentic Kit (https://agentic-kit.dev/)
 HTML: https://agentic-kit.dev/docs/mcp
 Engine docs: https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt
 
-When deployed, Agentic Kit exposes an MCP server over Streamable HTTP. No API keys or config — the server reads public docs and policy packs at runtime.
+When deployed, Agentic Kit exposes an MCP server over Streamable HTTP. No API keys or config. The server reads public docs and policy packs at runtime.
 
 ## Endpoint
 
@@ -36,7 +36,7 @@ Use the same URL with Streamable HTTP transport. Consult your client's MCP docs 
 
 ## Resources (preferred)
 
-Use MCP **resources** when your client supports them — they map directly to Kit's llms corpus:
+Use MCP **resources** when your client supports them. They map directly to Kit's llms corpus:
 
 | URI | Purpose |
 |-----|---------|
@@ -56,8 +56,8 @@ Pair with the [Aletheia skill](https://github.com/danielalbinsson/Aletheia/tree/
 
 ## Also available
 
-- [llms.txt](/llms.txt) — index for agents that do not use MCP
-- [API catalog](/.well-known/api-catalog) — linkset for discovery bots
+- [llms.txt](/llms.txt): index for agents that do not use MCP
+- [API catalog](/.well-known/api-catalog): linkset for discovery bots
 
 ## Related
 
