@@ -1,7 +1,10 @@
 export { DOCS_NAV } from "../data/docs";
 
 export const LINKS = {
-  aletheia: "https://github.com/danielalbinsson/Aletheia",
+  /** Hosted Aletheia showcase (proxied under this domain). */
+  aletheia: "https://agentic-kit.dev/aletheia",
+  /** Source repo — clone / skill install / PRs. */
+  aletheiaRepo: "https://github.com/danielalbinsson/Aletheia",
   aletheiaClone: "https://github.com/danielalbinsson/Aletheia.git",
   cli: "https://www.npmjs.com/package/@danielalbinsson/aletheia-cli",
   designQa: "https://github.com/danielalbinsson/design-qa-agent",

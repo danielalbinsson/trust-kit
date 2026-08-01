@@ -56,6 +56,7 @@ MCP server: https://agentic-kit.dev/api/mcp — setup at https://agentic-kit.dev
 ## Site (human UI)
 
 - [Home](https://agentic-kit.dev/): product promise
+- [Aletheia showcase](https://agentic-kit.dev/aletheia): hosted inspector / portrait demo
 - [Gallery](https://agentic-kit.dev/gallery): stamped blueprints
 - [Capability Review](https://agentic-kit.dev/review): paid review CTA
 - [Docs](https://agentic-kit.dev/docs): honesty contract, CLI, CI, Kit Certified

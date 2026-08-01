@@ -3,6 +3,14 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/aletheia",
+      "destination": "https://aletheia-vert.vercel.app/aletheia"
+    },
+    {
+      "source": "/aletheia/:path*",
+      "destination": "https://aletheia-vert.vercel.app/aletheia/:path*"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "/api/$1"
     },

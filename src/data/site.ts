@@ -31,6 +31,7 @@ export const site = {
   licenseUrl: "https://opensource.org/licenses/MIT",
   datePublished: "2026-07-25",
   aletheiaRepo: "https://github.com/danielalbinsson/Aletheia",
+  aletheiaShowcase: "https://agentic-kit.dev/aletheia",
   aletheiaLlms:
     "https://raw.githubusercontent.com/danielalbinsson/Aletheia/main/public/llms.txt",
   aletheiaAgents:
