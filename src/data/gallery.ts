@@ -89,7 +89,7 @@ interface AgentMeta {
 const meta: AgentMeta[] = [
   {
     slug: "design-qa-agent",
-    name: "design-qa-agent",
+    name: "Design QA Agent",
     role: "Orchestrator",
     body: "Holds no tools of its own: it directs specialist subagents and reaches GitHub over MCP. The portrait shows the delegation graph.",
     repo: LINKS.designQa,

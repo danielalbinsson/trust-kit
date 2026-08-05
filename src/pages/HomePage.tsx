@@ -133,7 +133,7 @@ export function HomePage() {
               <div className="p-6">
                 <h3 className="text-xl tracking-tight">{agent.name}</h3>
                 <p className="mt-2 text-sm text-muted">{agent.body}</p>
-                <p className="text-link mt-4 text-sm">View repo →</p>
+                <p className="text-link mt-4 text-sm">View repo</p>
               </div>
             </a>
           ))}
