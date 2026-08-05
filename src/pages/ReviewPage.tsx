@@ -13,11 +13,12 @@ export function ReviewPage() {
     <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
       <p className="eyebrow fade-up">Service</p>
       <h1 className="display fade-up-delay mt-4 max-w-3xl text-4xl md:text-6xl">
-        Capability Review
+        Hire
       </h1>
       <p className="lead fade-up-delay-2 mt-6">
-        I run fixed-scope reviews of eve agent repos. Stakeholders get a capability
-        one-pager; you get a Kit Certified gap list to ship against.
+        I help eve (Vercel) teams make supervised delegation inspectable: Aletheia
+        self-portraits, authority reporting, and a Kit Certified gap list you can ship
+        against.
       </p>
 
       <div className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -32,12 +33,11 @@ export function ReviewPage() {
             ))}
           </ul>
 
-          <h2 className="mt-10 text-2xl tracking-tight">Scope & turnaround</h2>
+          <h2 className="mt-10 text-2xl tracking-tight">Scope</h2>
           <p className="mt-4 text-base leading-relaxed text-ink-soft">
-            One eve agent repo (or monorepo path). Async review in ~3–5 business
-            days after access. Fixed fee typically{" "}
-            <strong className="font-medium">€400–1500</strong> depending on
-            connections, subagents, and CI depth.
+            One eve agent repo (or monorepo path). Share the repo link (and branch)
+            plus the channels the agent will use. You’ll get the kit outputs below to
+            close lifecycle legibility gaps before merge.
           </p>
 
           <h2 className="mt-10 text-2xl tracking-tight">Support boundary</h2>
@@ -57,13 +57,13 @@ export function ReviewPage() {
         <div className="panel order-1 flex flex-col justify-between p-8 md:p-10 lg:order-2">
           <div>
             <p className="eyebrow">Intake</p>
-            <h2 className="mt-3 text-3xl tracking-tight">Request a review</h2>
+            <h2 className="mt-3 text-3xl tracking-tight">Send your agent flow</h2>
             <p className="mt-4 text-base leading-relaxed text-ink-soft">
               Email the repo URL (or grant temporary read access), the channels
-              it will use, and when you need the report.
+              it will use, and your target deadline.
             </p>
             <ol className="mt-6 list-decimal space-y-2 pl-5 text-sm text-ink-soft">
-              <li>Repo link + branch to review</li>
+              <li>Repo link + branch to inspect</li>
               <li>Intended deployment (Slack, Linear, …)</li>
               <li>Deadline / stakeholder audience</li>
             </ol>

@@ -13,6 +13,6 @@ export const LINKS = {
   supportBot: "https://github.com/danielalbinsson/eve-blueprints/tree/main/support-bot",
   agenticUx: "https://agentic-ux.com",
   hire: "https://agentic-ux.com/hire",
-  email: "mailto:daniel.Albinsson@pm.me?subject=Capability%20Review%20inquiry",
+  email: "mailto:daniel.Albinsson@pm.me?subject=Agentic%20Kit%20hire%20inquiry",
   skill: "https://github.com/danielalbinsson/Aletheia/tree/main/skills/aletheia-eve-trust",
 } as const;

@@ -27,7 +27,7 @@ export function resolvePageMeta(path: string): PageMeta {
   }
   if (path === "/review") {
     return {
-      title: `Capability Review · ${SITE_TITLE}`,
+      title: `Hire · ${SITE_TITLE}`,
       description: site.reviewMetaDescription,
       path: "/review",
     };

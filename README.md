@@ -9,7 +9,7 @@ Public product shell for [agentic-kit.dev](https://agentic-kit.dev). Inspect · 
 | Surface | Job |
 |---------|-----|
 | [Agentic UX](https://agentic-ux.com) | Lifecycle patterns for supervised delegation: Before the agent acts, While the agent works, After the agent acts · [hire](https://agentic-ux.com/hire) |
-| **This site (Agentic Kit)** | Inspect · Gate · Stamp + [Capability Review](https://agentic-kit.dev/review) |
+| **This site (Agentic Kit)** | Inspect · Gate · Stamp + [Hire](https://agentic-kit.dev/review) |
 | [Aletheia](https://github.com/danielalbinsson/Aletheia) | Self-portrait + authority-diff CI · `npx @danielalbinsson/aletheia-cli` |
 | [eve-blueprints](https://github.com/danielalbinsson/eve-blueprints) | Copyable eve templates with lifecycle docs |
 | [design-qa-agent](https://github.com/danielalbinsson/design-qa-agent) | Kit Certified runnable showcase |
@@ -93,4 +93,4 @@ pnpm validate:jsonld
 ## About the author
 
 Built by [Daniel Albinsson](https://danielalbinsson.com). [Agentic UX](https://agentic-ux.com) framework author.
-[Hire / consult](https://agentic-ux.com/hire) · [Capability Review](https://agentic-kit.dev/review)
+[Hire / consult](https://agentic-ux.com/hire) · [Hire (eve agent legibility)](https://agentic-kit.dev/review)

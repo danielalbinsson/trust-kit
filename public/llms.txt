@@ -58,7 +58,7 @@ MCP server: https://agentic-kit.dev/api/mcp — setup at https://agentic-kit.dev
 - [Home](https://agentic-kit.dev/): product promise
 - [Aletheia showcase](https://agentic-kit.dev/aletheia): hosted inspector / portrait demo
 - [Gallery](https://agentic-kit.dev/gallery): stamped blueprints
-- [Capability Review](https://agentic-kit.dev/review): paid review CTA
+- [Hire](https://agentic-kit.dev/review): eve agent legibility hire CTA
 - [Docs](https://agentic-kit.dev/docs): honesty contract, CLI, CI, Kit Certified
 - [MCP server](https://agentic-kit.dev/docs/mcp): connect Cursor and other MCP clients
 - [Agentic UX](https://agentic-ux.com): lifecycle patterns for supervised delegation

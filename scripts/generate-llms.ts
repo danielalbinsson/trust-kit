@@ -97,7 +97,7 @@ function formatIndex(): string {
     `- [Home](${abs("/")}): product promise`,
     `- [Aletheia showcase](${site.aletheiaShowcase}): hosted inspector / portrait demo`,
     `- [Gallery](${abs("/gallery")}): stamped blueprints`,
-    `- [Capability Review](${abs("/review")}): paid review CTA`,
+    `- [Hire](${abs("/review")}): eve agent legibility hire CTA`,
     `- [Docs](${abs("/docs")}): honesty contract, CLI, CI, Kit Certified`,
     `- [MCP server](${abs("/docs/mcp")}): connect Cursor and other MCP clients`,
     `- [Agentic UX](${site.agenticUxUrl}): lifecycle patterns for supervised delegation`,

@@ -274,7 +274,7 @@ Use the honesty contract: never treat inferred facts as verified. Prefer \`eve b
     eyebrow: "Phase 2 · gated",
     summary:
       "Public backlog for Kit Pro: Action, passport export, policy packs, stamped blueprint pack. Gated until demand + Aug 31.",
-    body: `Kit Pro ships only after Capability Review proves demand **and** after August 31. Until then, this page is the public backlog, not a buy path.
+    body: `Kit Pro ships only after eve agent legibility audits prove demand **and** after August 31. Until then, this page is the public backlog, not a buy path.
 
 ## GitHub Action Pro
 
@@ -305,7 +305,7 @@ Paid downloadable verticals with UX.md + consent + CI already wired. Built on th
 - Hosted private gallery / shareable portrait URLs
 - Org policy sync for managers who will not install Node
 
-Want early access? Mention it when you [book a Capability Review](/review).`,
+Want early access? Mention it when you [send your agent flow](/review).`,
   },
 ] as const;
 

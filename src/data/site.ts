@@ -63,7 +63,7 @@ export const site = {
   galleryMetaDescription:
     "Stamped eve agent blueprints that pass Aletheia inspection and the Kit Certified checklist.",
   reviewMetaDescription:
-    "Fixed-scope Capability Review: capability one-pager for stakeholders, Kit Certified gap list for your team.",
+    "Hire for eve agent legibility: Aletheia self-portraits, authority reporting, and a Kit Certified gap list you can ship against.",
   docsIndexMetaDescription:
     "Supervised delegation on eve: honesty contract, lifecycle docs, CLI, CI gate, Kit Certified, and the golden path.",
 } as const;

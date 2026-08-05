@@ -1,6 +1,6 @@
 # Stamped blueprint pack (Phase 2 · gated)
 
-Paid vertical blueprints ship after Capability Review WTP **and** post–Aug 31 capacity.
+Paid vertical blueprints ship after eve agent legibility hire inquiries prove demand **and** post–Aug 31 capacity.
 
 Until then, open references:
 

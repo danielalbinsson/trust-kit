@@ -116,7 +116,7 @@ export function docPageJsonLd(id: DocId): Record<string, unknown>[] {
         "supervised delegation",
         "Agentic UX",
         "Aletheia",
-        "capability review",
+        "agent lifecycle audit",
         "Kit Certified",
       ],
     },
@@ -148,7 +148,7 @@ export function reviewPageJsonLd(): Record<string, unknown>[] {
     {
       "@type": "WebPage",
       "@id": pagePathToUrl("/review"),
-      name: `Capability Review · ${site.siteTitle}`,
+      name: `Hire · ${site.siteTitle}`,
       url: pagePathToUrl("/review"),
       description: site.reviewMetaDescription,
     },
